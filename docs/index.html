@@ -14,7 +14,30 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body></body>
+  <body>
+    <ul class="list list--tick">
+      <li class="list__item">Item 1</li>
+      <li class="list__item">Item 2</li>
+      <li class="list__item">Item 3</li>
+    </ul>
+
+    <header>
+      <nav class="nav collapsible">
+        <a class="nav__brand" href="/"
+          ><img src="images/logo.svg" alt="logo"
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a herf="#">Hosting</a></li>
+          <li class="nav__item"><a herf="#">VPS</a></li>
+          <li class="nav__item"><a herf="#">Domain</a></li>
+          <li class="nav__item"><a herf="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
   <script src="js/main.js"></script>
   <!-- aos animate -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
