@@ -130,7 +130,7 @@ a {
 /* Navigation Bar */
 
 .nav {
-  background: #000;
+  background: rgb(65, 183, 210);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -144,16 +144,20 @@ a {
 }
 
 .nav__item {
+  display: flex;
+  justify-content: center;
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid rgb(95, 188, 220);
 }
 
 .nav__item > a {
-  color: #d2d0db;
-  transition: color 0.3s;
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.3s;
 }
 .nav__item > a:hover {
   color: #fff;
+  opacity: 1;
 }
 
 .nav__toggler {
