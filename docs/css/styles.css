@@ -133,6 +133,10 @@ a {
   height: 40px;
 }
 
+.icon--white {
+  fill: #fff;
+}
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -142,6 +146,10 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* Navigation Bar */
@@ -474,7 +482,33 @@ a {
 
 /* testimonial */
 .testimonial {
+  display: none;
   padding: 3rem;
+}
+.testimonial.active {
+  display: block;
+}
+
+.testimonial-container {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-nav-left,
+.testimonial-nav-right {
+  background: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#prevTestimonial {
+  left: 1000px;
+}
+
+#nextTestimonial {
+  right: 10px;
 }
 
 .testimonial__image {
