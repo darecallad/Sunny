@@ -421,6 +421,7 @@ a {
   border-radius: 7px;
   box-shadow: 0 0 20px 10px #f3f3f3;
   overflow: hidden;
+  height: 370px;
 }
 
 .card__header {
@@ -439,6 +440,12 @@ a {
 .card__header,
 .card__body {
   padding: 2rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    height: 400px;
+  }
 }
 
 /* Plans Block */
