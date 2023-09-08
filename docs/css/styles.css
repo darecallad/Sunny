@@ -323,3 +323,31 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Heros */
+
+.hero__tagline {
+  font-size: 2rem;
+  opacity: 0.8;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+  .hero__image {
+    margin-top: 2rem;
+  }
+}
