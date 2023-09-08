@@ -183,6 +183,10 @@ a {
   border-bottom: 1px solid rgb(95, 188, 220);
 }
 
+.nav > a > img {
+  width: 280px;
+}
+
 .nav__item > a {
   color: #fff;
   opacity: 0.8;
