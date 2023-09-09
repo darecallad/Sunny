@@ -322,7 +322,7 @@ a {
   opacity: 0.8;
   color: #fff;
   letter-spacing: 1px;
-  margin: 2rem 0 5rem;
+  margin: 2rem 1rem 5rem;
 }
 
 .hero__image {
@@ -413,7 +413,7 @@ a {
 
 .btn--stretched {
   padding-left: 6rem;
-  padding-right: 6rem;
+  padding-right: 5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -481,7 +481,7 @@ a {
 /* testimonial */
 .testimonial {
   display: none;
-  padding: 3rem;
+  padding: 1rem;
 }
 .testimonial.active {
   display: block;
@@ -499,7 +499,7 @@ a {
   border: none;
   cursor: pointer;
   font-size: 3rem;
-  margin: 0 10px;
+  margin: 0;
   padding: 10px;
   transition: transform 0.5s;
   color: var(--color-primary);
