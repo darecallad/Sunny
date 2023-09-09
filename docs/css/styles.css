@@ -489,6 +489,7 @@ a {
 
 .testimonial-container {
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -501,6 +502,7 @@ a {
   margin: 0 10px;
   padding: 10px;
   transition: transform 0.5s;
+  color: var(--color-primary);
 }
 
 .testimonial-nav-left:hover,
