@@ -329,23 +329,24 @@ a {
   width: 100%;
 }
 
+.hero .block__heading {
+  text-align: center;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 0;
   }
   .hero__content {
-    text-align: left;
+    text-align: center;
     align-self: center;
-  }
-
-  .hero__image {
-    margin-top: 4rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero__image {
-    margin-top: 2rem;
+    margin-top: 15rem;
   }
 }
 
