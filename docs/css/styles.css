@@ -223,6 +223,10 @@ a {
   color: #fff;
 }
 
+.subnav a:hover {
+  opacity: 1;
+}
+
 .subnav__content {
   max-height: 0;
   overflow: hidden;
