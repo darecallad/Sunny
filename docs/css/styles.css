@@ -173,6 +173,8 @@ a {
   justify-content: center;
   padding: 0.5rem 2rem;
   border-bottom: 1px solid rgb(95, 188, 220);
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav > a > img {
@@ -204,6 +206,35 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
+}
+
+/* subNav */
+
+.subnav {
+  margin-top: 0rem;
+}
+
+.subnav .list {
+  text-align: center;
+}
+
+.subnav a {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.subnav__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1.2s;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav__item:hover .subnav__content {
+  max-height: 100%;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
