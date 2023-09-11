@@ -640,8 +640,13 @@ a {
   margin: 0 2rem;
 }
 
-.media__image {
+.media__body .icon {
+  width: 45px;
   margin-top: 1rem;
+}
+
+.media__image {
+  margin-top: 4rem;
 }
 
 /* Footer */
