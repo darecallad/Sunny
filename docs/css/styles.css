@@ -643,6 +643,13 @@ a {
 .media__body .icon {
   width: 45px;
   margin-top: 1rem;
+  transition: scale 0.3s;
+}
+
+.media__body .icon:hover {
+  width: 45px;
+  margin-top: 1rem;
+  scale: 1.1;
 }
 
 .media__image {
