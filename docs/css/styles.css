@@ -856,4 +856,11 @@ a {
   .block-showcase p {
     font-size: 1.9rem;
   }
+
+  .block--white .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 1rem;
+  }
 }
