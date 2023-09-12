@@ -316,6 +316,11 @@ a {
   color: #fff;
 }
 
+.block--white {
+  background: #fff;
+  color: var(--color-primary);
+}
+
 .block--blue h1,
 .block--blue h2,
 .block--blue h3 {
@@ -812,5 +817,25 @@ a {
   .callout .btn {
     justify-self: start;
     margin: 0 2rem;
+  }
+}
+
+/* ShowCase Block */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase__image {
+    justify-self: end;
+  }
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
