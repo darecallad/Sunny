@@ -130,9 +130,109 @@
         </ul>
       </nav>
     </header>
-    <h1>Sunny House Daycare</h1>
+
+    <section class="block block-daycare">
+      <header class="block__header"><h2>Sunny House Daycare</h2></header>
+      <div class="container">
+        <article class="grid grid--1x2 feature">
+          <div class="feature__content" data-aos="fade-right">
+            <ul class="list">
+              <li class="list__item">
+                <span class="daycare__point">School Hours:</span>
+                <p class="daycare__text">M-F: 6:00 am — 6:00 pm</p>
+              </li>
+              <li class="list__item">
+                <span class="daycare__point">Address:</span>
+                <p class="daycare__text">1630 peacock Ave Sunnyvale ca 94087</p>
+                <p class="daycare__text">☎️ +1 (213) 257-0331</p>
+              </li>
+              <li class="list__item">
+                <span class="daycare__point"> Email:</span>
+                <p class="daycare__text">sunnyhousedaycare2023@gmail.com</p>
+              </li>
+              <li class="list__item">
+                <span class="daycare__point">License #: </span>
+                <p class="daycare__text">434417365</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="daycare__point">Alex Huang</h3>
+            <picture data-aos="zoom-in-left">
+              <source
+                type="image/webp"
+                srcset="
+                  ../images/programs/test.webp    1x,
+                  ../images/programs/test@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  ../images/programs/test.jpg    1x,
+                  ../images/programs/test@2x.jpg 2x
+                "
+              />
+              <img
+                class="feature__image"
+                src="../images/programs/test@2x.jpg"
+                alt="1630"
+              />
+            </picture>
+          </div>
+        </article>
+      </div>
+      <div class="daycare-picture picture-container">
+        <h3 class="daycare__point">Daycare photos</h3>
+        <!-- 1 -->
+        <picture data-aos="zoom-in-left" id="daycareImage1">
+          <source
+            type="image/webp"
+            srcset="
+              ../images/daycare/1630/1630.webp    1x,
+              ../images/daycare/1630/1630@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../images/daycare/1630/1630.png    1x,
+              ../images/daycare/1630/1630@2x.png 2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="../images/daycare/1630/1630@2x.png"
+            alt="test"
+          />
+        </picture>
+        <!-- 2 -->
+        <picture data-aos="zoom-in-left" id="daycareImage2">
+          <source
+            type="image/webp"
+            srcset="
+              ../images/daycare/1630/1630-1.webp    1x,
+              ../images/daycare/1630/1630-1@2x.webp 2x
+            "
+          />
+          <source
+            type="image/png"
+            srcset="
+              ../images/daycare/1630/1630-1.png    1x,
+              ../images/daycare/1630/1630-1@2x.png 2x
+            "
+          />
+          <img
+            class="feature__image"
+            src="../images/daycare/1630/1630-1@2x.png"
+            alt="1630-1"
+          />
+        </picture>
+      </div>
+    </section>
   </body>
   <script src="../js/collapsibles.js"></script>
+  <script src="../js/slidershow.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
