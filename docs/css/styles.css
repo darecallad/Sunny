@@ -326,8 +326,16 @@ a {
 .block-center,
 .block-daycare {
   border-radius: 30px;
-  margin: 2rem;
+  margin: 2rem 2rem;
+  padding: 0 4rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+.block-daycare.block--blue {
+  opacity: 0.85;
 }
 
 .block--blue .btn:hover {
@@ -685,6 +693,7 @@ a {
 /* Footer */
 
 .footer {
+  margin-top: 5rem;
   background: var(--color-primary);
   opacity: 0.8;
 }
@@ -776,7 +785,7 @@ a {
 /* Features */
 .feature {
   gap: 4rem 2rem;
-  margin: 12rem 0;
+  margin: 4rem 0;
 }
 
 .feature:first-of-type {
@@ -879,7 +888,7 @@ a {
 
 .about__text,
 .daycare__text {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .about__text.about__space {
@@ -890,24 +899,14 @@ a {
 .daycare__point {
   color: var(--color-headings);
   font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about__block {
   border-radius: 30px;
   margin: 2rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
-}
-
-@media screen and (min-width: 1024px) {
-  .about__point,
-  .daycare__point {
-    font-size: 2.6rem;
-  }
-  .about__text,
-  .daycare__text {
-    font-size: 2.3rem;
-    margin-bottom: 1rem;
-  }
 }
 
 /* Program section */
@@ -925,7 +924,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -14rem;
 }
 
 .picture-container picture {
@@ -934,4 +932,14 @@ a {
 
 .picture-container picture:first-child {
   display: block;
+}
+
+.daycare-profile {
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+}
+
+.picture-container .feature__image {
+  margin-bottom: 4rem;
 }
