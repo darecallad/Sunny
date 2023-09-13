@@ -316,6 +316,9 @@ a {
   color: #fff;
 }
 
+.block--blue .link-arrow {
+  color: #fff;
+}
 .block--blue .btn {
   transition: 0.3s font-size;
 }
