@@ -231,7 +231,7 @@ a {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all 1.2s;
+  transition: all 0.5s;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 }
