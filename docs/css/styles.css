@@ -649,6 +649,10 @@ a {
   bottom: 20px;
 }
 
+.quote__line.teacher__line {
+  bottom: 45px;
+}
+
 @media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
