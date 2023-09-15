@@ -389,7 +389,7 @@ a {
 .container .hero__tagline {
   color: var(--color-headings);
   text-align: left;
-  padding: 0 2rem;
+  padding: 0 2rem 4rem;
 }
 
 /* Grids */
