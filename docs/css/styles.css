@@ -334,6 +334,22 @@ a {
   color: #fff;
 }
 
+.block--blue a {
+  color: #fff;
+  opacity: 0.8;
+  transition: opacity 0.4s ease-out;
+}
+
+.block--blue span {
+  transition: 0.5s scale;
+}
+.block--blue a:hover {
+  opacity: 1;
+}
+.block--blue span:hover {
+  transform: scale(1.1);
+}
+
 .block--blue .link-arrow {
   color: #fff;
 }
