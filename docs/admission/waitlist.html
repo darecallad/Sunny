@@ -133,105 +133,23 @@
     <!-- Our Story  -->
     <section class="block about__block">
       <header class="block__header">
-        <h2>Our Staff</h2>
+        <h2>Join the waitlist</h2>
       </header>
       <div class="container">
-        <p class="about__point">
-          Sunny Child Care provides a comprehensive early childhood program
-          catering to children from infancy to Kindergarten-entry, staffed by
-          highly qualified early educators. Our curriculum and philosophical
-          framework are rooted in play-based and research-based approaches.
-        </p>
+        <form id="emailForm">
+          <label>Name:</label>
+          <input type="text" id="name" />
 
-        <p class="about__text">
-          Each of our Early Education teachers meets the following requirements:
-        </p>
-        <ul class="list">
-          <li class="list__item">
-            <span class="about__point">
-              - All SCC Early Educators undergo fingerprinting and background
-              clearance.</span
-            >
-          </li>
-          <li class="list__item">
-            <span class="about__point">
-              - They hold CPR/First Aid certification.
-            </span>
-          </li>
-          <li class="list__item">
-            <span class="about__point">
-              - Our teachers are fully qualified, exceeding the minimum state
-              requirements in terms of their educational backgrounds.
-            </span>
-            <p class="about__text">
-              Our commitment to maintaining low teacher-to-student ratios
-              enables our educators to concentrate on the unique learning styles
-              and requirements of each child within our center. We firmly
-              believe that teachers play a pivotal role in a child's early
-              development, and we organize biannual teacher training sessions to
-              ensure our staff remains highly skilled, well-prepared, and
-              dedicated to delivering the best possible care to children. Their
-              unwavering dedication is focused on providing the optimal
-              experience for the children entrusted to their care.
-            </p>
-          </li>
-          <p class="about__text about__space"></p>
-        </ul>
+          <label>Email:</label>
+          <input type="email" id="email" />
+
+          <label>Message:</label>
+          <textarea id="message"></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
       </div>
     </section>
-
-    <section class="block">
-      <header class="block__header">
-        <h2>Staff Gallery</h2>
-      </header>
-      <div class="container testimonial-container">
-        <button class="testimonial-nav-left" id="prevTestimonial">←</button>
-
-        <!-- First -->
-        <div class="card testimonial active">
-          <div class="grid grid--1x2">
-            <div class="testimonial__image">
-              <img
-                src="../images/testimonial.jpg"
-                alt="testionial smiling customer"
-              />
-              <span class="icon-container icon-container--accent">
-                <svg class="icon icon--white">
-                  <use xlink:href="../images/sprite.svg#quotes"></use>
-                </svg>
-              </span>
-            </div>
-            <blockquote class="quote">
-              <p class="quote__text">
-                We were looking for a new daycare after a horrible small in home
-                daycare experience. Our child would scream without stopping at
-                the home daycare. after putting our kid in this daycare for
-                three days. It was the most stressful situation I have ever
-                dealt with. Needless to say I will never do another home daycare
-                again. I found Building Kidz and took a tour. I was a little
-                hesitant due to covid but after hearing about their protocols I
-                honestly feel it’s safer than a home daycare. The facility is
-              </p>
-              <footer>
-                <div class="media">
-                  <div class="media__image">
-                    <svg class="icon icon--primary quote__line teacher__line">
-                      <use xlink:href="../images/sprite.svg#line"></use>
-                    </svg>
-                  </div>
-                  <div class="media__body">
-                    <h3 class="media__title quote__author">John Smith</h3>
-                  </div>
-                </div>
-              </footer>
-            </blockquote>
-          </div>
-        </div>
-        <!-- Second -->
-        <button class="testimonial-nav-right" id="nextTestimonial">→</button>
-      </div>
-    </section>
-
     <!-- Footer -->
     <footer class="block footer">
       <div class="container grid footer__sections">
