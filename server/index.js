@@ -4,8 +4,9 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 3000;
+const cors = require("cors");
 app.use(bodyParser.json());
-
+app.use(cors());
 app.post("/send-email", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
