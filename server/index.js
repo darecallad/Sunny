@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const app = express();
-
+const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 
 app.post("/send-email", (req, res) => {
@@ -17,7 +17,7 @@ app.post("/send-email", (req, res) => {
 
   let mailOptions = {
     from: req.body.email,
-    to: "targetEmail@gmail.com",
+    to: "darecallad0000@gmail.com",
     subject: `Message from ${req.body.name}`,
     text: req.body.message,
   };
@@ -32,6 +32,6 @@ app.post("/send-email", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server started on http://localhost:3000");
+app.listen(PORT, () => {
+  console.log(`Server started on http://localhost:${PORT}`);
 });
