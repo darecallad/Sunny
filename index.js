@@ -10,7 +10,11 @@ app.use(bodyParser.json());
 
 const corsOptions = {
   origin: "https://darecallad.github.io",
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
 };
+
 app.use(cors(corsOptions));
 //route
 app.get("/", (req, res) => {
