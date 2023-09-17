@@ -7,8 +7,11 @@ const PORT = process.env.PORT || 3000;
 const cors = require("cors");
 
 app.use(bodyParser.json());
-app.use(cors());
 
+const corsOptions = {
+  origin: "https://darecallad.github.io",
+};
+app.use(cors(corsOptions));
 //route
 app.get("/", (req, res) => {
   res.send("Hello, this is my server!");
