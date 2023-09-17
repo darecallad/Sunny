@@ -5,7 +5,7 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  fetch("https://sunnyemail.herokuapp.com/send-email", {
+  fetch("https://sunnyemail-19d950067d7d.herokuapp.com/send-email", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
