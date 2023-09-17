@@ -5,8 +5,15 @@ const nodemailer = require("nodemailer");
 const app = express();
 const PORT = process.env.PORT || 3000;
 const cors = require("cors");
+
 app.use(bodyParser.json());
 app.use(cors());
+
+//route
+app.get("/", (req, res) => {
+  res.send("Hello, this is my server!");
+});
+
 app.post("/send-email", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
@@ -26,7 +33,7 @@ app.post("/send-email", (req, res) => {
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
       console.log(error);
-      res.status(500).send("Error while sending email.");
+      res.status(500).send(`Error while sending email: ${error.message}`);
     } else {
       res.send("Email sent.");
     }
