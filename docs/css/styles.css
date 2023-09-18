@@ -796,6 +796,9 @@ a {
   opacity: 0.5;
 }
 
+.footer__bold {
+  font-weight: 700;
+}
 .footer__section .list {
   margin: 0;
   text-align: center;
