@@ -31,3 +31,15 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+
+document.querySelector(".read-more").addEventListener("click", function () {
+  const quoteText = document.querySelector(".quote__text");
+
+  if (quoteText.classList.contains("expanded")) {
+    quoteText.classList.remove("expanded");
+    this.textContent = "Read More";
+  } else {
+    quoteText.classList.add("expanded");
+    this.textContent = "Read Less";
+  }
+});
