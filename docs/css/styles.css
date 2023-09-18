@@ -434,8 +434,8 @@ a {
 
 .hero-profile {
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 55rem;
+  height: 55rem;
   object-fit: cover;
 }
 
@@ -452,6 +452,12 @@ a {
     text-align: center;
     align-self: center;
   }
+
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -460,6 +466,9 @@ a {
   }
   .hero__content {
     margin-right: 4rem;
+  }
+  .hero .container {
+    flex-direction: row;
   }
 }
 
