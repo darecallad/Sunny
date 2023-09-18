@@ -237,7 +237,7 @@ a {
   margin-bottom: 0.5rem;
   position: absolute;
   top: 100%;
-  width: 100%;
+  width: 20rem;
   background: var(--color-primary);
   z-index: 10;
   transform: translateY(-100%);
