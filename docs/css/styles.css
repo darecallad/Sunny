@@ -801,7 +801,7 @@ a {
 }
 .footer__section .list {
   margin: 0;
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-size: 2rem;
 }
