@@ -368,6 +368,9 @@ a {
   opacity: 0.85;
 }
 
+.block-daycare .block__header {
+  margin-bottom: 1rem;
+}
 .block--blue .btn:hover {
   font-size: 2rem;
 }
@@ -870,6 +873,9 @@ a {
   width: 100%;
 }
 
+.feature__content .list__item {
+  text-align: center;
+}
 .feature__content p {
   text-indent: 25px;
 }
