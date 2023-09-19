@@ -249,7 +249,7 @@ a {
   position: absolute;
   top: 100%;
   width: 20rem;
-  background: var(--color-primary);
+  background: var(--color-body-darker);
   z-index: 10;
   transform: translateY(-100%);
   visibility: hidden;
