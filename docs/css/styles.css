@@ -915,6 +915,17 @@ a {
   color: #fff;
 }
 
+.callout--bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #333;
+  color: white;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
 .callout__heading {
   color: #fff;
   margin-top: 0;
@@ -935,12 +946,7 @@ a {
     grid-template-columns: 1fr auto;
   }
 
-  .callout__content {
-    text-align: left;
-  }
-
   .callout .btn {
-    justify-self: start;
     margin: 0 2rem;
   }
 }
