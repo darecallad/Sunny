@@ -166,6 +166,11 @@ a {
 /* Navigation Bar */
 
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   background: var(--color-primary);
   display: flex;
   justify-content: space-between;
