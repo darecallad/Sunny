@@ -237,14 +237,15 @@ a {
 }
 
 .subnav a {
-  opacity: 0.8;
+  opacity: 0.6;
   color: var(--color-primary);
   font-weight: bold;
+  transition: all 0.2s;
 }
 
 .subnav a:hover {
   opacity: 1;
-  color: #fff;
+  font-size: 1.64rem;
 }
 
 .subnav__content {
@@ -260,10 +261,6 @@ a {
   z-index: 10;
   transform: translateY(-100%);
   visibility: hidden;
-}
-
-.subnav__content li:hover {
-  background: var(--color-primary);
 }
 
 .nav__item:hover .subnav__content {
