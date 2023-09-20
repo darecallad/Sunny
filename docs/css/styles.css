@@ -567,11 +567,15 @@ a {
   .btn {
     font-size: 1.5rem;
   }
+
+  .btn--tele {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .btn {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 1rem;
   }
 }
