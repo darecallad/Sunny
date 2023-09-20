@@ -342,6 +342,10 @@ a {
   transition: opacity 0.3s ease-out;
 }
 
+.block--blue a.btn {
+  color: #fff;
+}
+
 .block--blue a:hover {
   opacity: 1;
 }
@@ -544,8 +548,8 @@ a {
 }
 
 .btn--stretched {
-  padding-left: 6rem;
-  padding-right: 5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 @media screen and (min-width: 1024px) {
