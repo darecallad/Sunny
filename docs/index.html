@@ -316,7 +316,7 @@
     <!-- Testimonial Section -->
     <section class="block" data-aos="flip-up">
       <header class="block__header">
-        <h2 id="testimonialtitle">Parent's Testimonial</h2>
+        <h2 class="testimonialtitle">Parent's Testimonial</h2>
         <span class="icon-container icon-container--accent">
           <svg class="icon icon--white">
             <use xlink:href="images/sprite.svg#quotes"></use>
@@ -324,7 +324,12 @@
         </span>
       </header>
       <div class="container testimonial-container">
-        <button class="testimonial-nav-left" id="prevTestimonial">←</button>
+        <img
+          src="images/arrow-left.svg"
+          id="prevTestimonial"
+          alt="arrow-left"
+          class="testimonial-nav-left"
+        />
 
         <!-- First -->
         <div class="card testimonial active">
@@ -414,7 +419,12 @@
             </blockquote>
           </div>
         </div>
-        <button class="testimonial-nav-right" id="nextTestimonial">→</button>
+        <img
+          src="images/arrow-right.svg"
+          alt="arrow-right"
+          class="testimonial-nav-right"
+          id="nextTestimonial"
+        />
       </div>
     </section>
     <!-- Call out section -->
@@ -424,9 +434,9 @@
           <a
             href="https://darecallad.github.io/Sunny/admission/tour"
             class="btn btn--outline"
-            >schedule a tour today</a
+            >schedule tour today</a
           >
-          <a href="tel:+15103335943" class="btn btn--primary btn--tele"
+          <a href="tel:+15103335943" class="btn btn--tele btn--outline"
             >Call 510-333-5943</a
           >
         </div>
@@ -443,14 +453,14 @@
           <div class="">
             <ul class="list">
               <li class="footer__bold">Address:</li>
-              <li>2586 seaboard ave San Jose CA 95131</li>
+              <li class="footer__info">2586 seaboard ave San Jose CA 95131</li>
               <li class="footer__bold">Email:</li>
-              <li>Center.admin@Sunnychildcare.com</li>
+              <li class="footer__info">Center.admin@Sunnychildcare.com</li>
               <li class="footer__bold">Phone:</li>
-              <li>(510) 333-5943 for tour scheduling</li>
-              <li>(408) 599-4381</li>
+              <li class="footer__info">(510) 333-5943 for tour scheduling</li>
+              <li class="footer__info">(408) 599-4381</li>
               <li class="footer__bold">School Hours:</li>
-              <li>M - F 8:30am to 6:00pm</li>
+              <li class="footer__info">M - F 8:30am to 6:00pm</li>
             </ul>
           </div>
         </section>
