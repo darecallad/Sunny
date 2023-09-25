@@ -413,6 +413,10 @@ a {
   font-size: 2rem;
 }
 
+.block__header h2 {
+  font-size: 3rem;
+}
+
 .block--white {
   background: #fff;
   color: var(--color-primary);
@@ -441,6 +445,9 @@ a {
   .block__header {
     margin-top: 6rem;
     margin-bottom: 4rem;
+  }
+  .block__header h2 {
+    font-size: 5rem;
   }
 }
 
@@ -981,6 +988,15 @@ a {
 }
 .feature__content p {
   text-indent: 25px;
+  font-size: 1.8rem;
+}
+
+.feature__content {
+  order: 2;
+}
+
+.feature__content .feature__heading {
+  font-size: 2.2rem;
 }
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
