@@ -1090,7 +1090,7 @@ a {
 .callout--bottom {
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: -10px;
   width: 100%;
   background: var(--color-primary);
   color: white;
@@ -1319,4 +1319,35 @@ tr:hover {
   flex-direction: column;
   align-items: start;
   gap: 15px;
+}
+
+/* circle */
+
+.big-circle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 1;
+  opacity: 0.2;
+  height: 80%;
+}
+
+/* banner logo */
+
+.banner-logo {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner-logo {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 25rem;
+    height: 25rem;
+    opacity: 0.5;
+    top: 50vh;
+    left: 40vw;
+    transform: rotate(-10deg);
+  }
 }
