@@ -1000,7 +1000,7 @@ a {
 
 /* Features */
 .feature {
-  gap: 4rem 2rem;
+  gap: 2rem 2rem;
   margin: 3rem 0 4rem 0;
 }
 
@@ -1043,7 +1043,10 @@ a {
     order: 2;
   }
   .feature__content {
+    display: flex;
     margin-bottom: 5rem;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
