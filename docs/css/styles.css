@@ -238,21 +238,21 @@ a {
 
 .subnav a {
   opacity: 0.6;
-  color: var(--color-primary);
-  font-weight: bold;
+  color: black;
+  font-weight: 400;
   transition: all 0.2s;
 }
 
 .subnav a:hover {
   opacity: 1;
-  font-size: 1.64rem;
+  font-size: 2.5rem;
 }
 
 .subnav__content {
   overflow: hidden;
   opacity: 0;
   transition: all 0.5s;
-  font-size: 1.54rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   position: absolute;
   top: 100%;
@@ -305,14 +305,22 @@ a {
 
 .collapsible__content {
   max-height: 0;
+  display: none;
   overflow: visible;
   opacity: 0;
   transition: all 0.5s;
 }
 
 .collapsible--expanded .collapsible__content {
+  display: block;
   max-height: 100%;
   opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .collapsible .collapsible__content {
+    display: flex;
+  }
 }
 
 /* Blocks */
@@ -342,6 +350,10 @@ a {
 .block--blue {
   background: var(--color-primary);
   color: #fff;
+}
+
+.block--blue.hero {
+  margin-top: 5rem;
 }
 
 .block--blue a {
