@@ -173,7 +173,7 @@ a {
   z-index: 1;
   background: var(--color-primary);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 1rem;
   align-items: center;
@@ -215,6 +215,9 @@ a {
   opacity: 0.5;
   transition: box-shoadow 0.15s;
   cursor: pointer;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -483,8 +486,8 @@ a {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
-  .grid--1x3 {
-    grid-template-columns: 1fr 1fr 1fr;
+  .grid--1x5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
@@ -665,8 +668,8 @@ a {
 
 /* Cards */
 .card {
-  border-radius: 10px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px #f3f3f3;
   overflow: hidden;
 }
 
@@ -683,6 +686,15 @@ a {
   text-align: center;
 }
 
+.card__body p {
+  font-size: 1.5rem;
+  color: var(--color-headings);
+}
+
+.card__body .link-arrow {
+  color: var(--color-headings);
+}
+
 .card__header,
 .card__body {
   padding: 2rem 3rem;
@@ -695,8 +707,25 @@ a {
 }
 
 .block-plans .card {
-  max-width: 650px;
+  max-width: 30rem;
+  max-height: 60rem;
   margin: 0;
+}
+
+.block-plans .block__header {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-plans .block__header {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+  }
+
+  .block-plans .grid {
+    gap: 8rem 1.5rem;
+  }
 }
 
 /* Plans */
@@ -708,15 +737,11 @@ a {
   color: #fff;
   margin: 0;
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .plan .list__item {
   margin-bottom: 2rem;
-}
-
-.plan:hover {
-  transform: scale(1.1);
 }
 
 /* testimonial */
