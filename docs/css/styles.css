@@ -466,6 +466,10 @@ a {
   margin: 0 auto;
 }
 
+.download-container {
+  margin: 4rem 1rem;
+}
+
 .container .hero__tagline {
   text-align: left;
   padding: 0 2rem 4rem;
