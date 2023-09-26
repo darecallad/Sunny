@@ -1114,6 +1114,9 @@ a {
   .callout-flex {
     height: 8rem;
   }
+  .callout--bottom {
+    display: none;
+  }
 }
 
 /* ShowCase Block */
@@ -1258,7 +1261,8 @@ a {
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 th {
   color: #fff;
@@ -1267,7 +1271,7 @@ th,
 td {
   padding: 10px 15px;
   border: 1px solid #ddd;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
 }
 th {
   background-color: var(--color-primary);
@@ -1281,7 +1285,12 @@ tr:hover {
 }
 
 .table__note {
-  font-size: 1.5rem;
+  padding-top: 2rem;
+  font-size: 1.7rem;
+}
+
+.table_title {
+  font-size: 2.5rem;
 }
 
 /* Resources */
