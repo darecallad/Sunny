@@ -1157,7 +1157,7 @@ a {
 
 .about__text,
 .daycare__text {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .about__text.about__space {
@@ -1199,7 +1199,7 @@ a {
 @media screen and (min-width: 1024px) {
   .about__text,
   .daycare__text {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 
