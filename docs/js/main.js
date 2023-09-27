@@ -77,7 +77,7 @@ function desktopNavBehavior() {
       if (subnav.style.visibility === "hidden" || !subnav.style.visibility) {
         subnav.style.visibility = "visible";
         subnav.style.opacity = "1";
-        subnav.style.maxHeight = "23rem";
+        subnav.style.maxHeight = "auto";
         subnav.style.transform = "translateY(0)";
       } else {
         subnav.style.visibility = "hidden";

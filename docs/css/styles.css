@@ -114,7 +114,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  margin-bottom: 5rem;
 }
 
 .list--inline .list__item {
@@ -328,6 +327,10 @@ a {
 @media screen and (min-width: 768px) {
   .collapsible .collapsible__content {
     display: flex;
+  }
+  .collapsible .sub__collapsible {
+    display: flex;
+    flex-direction: column;
   }
 }
 

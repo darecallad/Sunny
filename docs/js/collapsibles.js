@@ -30,8 +30,27 @@ function mobileNavBehavior() {
 }
 
 function desktopNavBehavior() {
-  // 你可以在這裡添加專為桌面版的功能或樣式
-  // ...
+  const navClickSpans = document.querySelectorAll(".nav__click > span");
+  navClickSpans.forEach((span) =>
+    span.addEventListener("click", function (e) {
+      const parentItem = span.parentElement;
+      const subnav = parentItem.querySelector(".subnav__content");
+
+      if (subnav.style.visibility === "hidden" || !subnav.style.visibility) {
+        subnav.style.visibility = "visible";
+        subnav.style.opacity = "1";
+        subnav.style.maxHeight = "23rem";
+        subnav.style.transform = "translateY(0)";
+      } else {
+        subnav.style.visibility = "hidden";
+        subnav.style.opacity = "0";
+        subnav.style.maxHeight = "0";
+        subnav.style.transform = "translateY(-100%)";
+      }
+
+      e.stopPropagation();
+    })
+  );
 }
 
 document.addEventListener("click", function (e) {
@@ -53,7 +72,6 @@ function adjustLayout() {
     mobileNavBehavior();
   }
 }
-
 // 當文檔加載時執行
 adjustLayout();
 
