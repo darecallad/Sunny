@@ -340,6 +340,14 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
+.block-photo {
+  padding: 0;
+}
+
+.block-photo h2 {
+  margin-top: 0;
+}
+
 .block__header {
   text-align: center;
 
@@ -1428,8 +1436,8 @@ tr:hover {
 }
 
 .photo-gallery .hero-profile {
-  width: 10rem;
-  height: 10rem;
+  width: 20rem;
+  height: 20rem;
   max-width: 100%;
 }
 
@@ -1471,8 +1479,8 @@ tr:hover {
   position: relative;
   width: 25rem;
   height: 25rem;
-  left: 2rem;
-  bottom: 20rem;
+  left: 3.5rem;
+  bottom: 10rem;
 }
 
 .modal-arrow-button {
@@ -1481,8 +1489,9 @@ tr:hover {
   padding: 0 1rem;
   border-radius: 50%;
   position: relative;
-  right: 14rem;
+  right: 13rem;
   transition: all 0.3s;
+  top: 10rem;
 }
 
 .modal-arrow-button:hover {
@@ -1491,8 +1500,8 @@ tr:hover {
 
 .modal-arrowdiv {
   display: flex;
-  justify-content: center; /* 水平置中箭頭按鈕 */
-  margin-top: 10px; /* 距離圖片一些距離，可以根據需要調整 */
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .close-button {
@@ -1525,7 +1534,7 @@ tr:hover {
 
   .modal-arrow-button {
     right: 18.5rem;
-    top: 5rem;
+    top: 15rem;
   }
 }
 
@@ -1537,6 +1546,6 @@ tr:hover {
 
   .modal-arrow-button {
     right: 23rem;
-    top: 12rem;
+    top: 20rem;
   }
 }

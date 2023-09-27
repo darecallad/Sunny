@@ -6,11 +6,11 @@ function setTotalPhotosBasedOnViewport() {
   var width = window.innerWidth;
 
   if (width <= 480) {
-    totalPhotos = 2;
+    totalPhotos = 1;
   } else if (width <= 768) {
-    totalPhotos = 4;
+    totalPhotos = 2;
   } else {
-    totalPhotos = 6;
+    totalPhotos = 4;
   }
 
   showPhotos();
