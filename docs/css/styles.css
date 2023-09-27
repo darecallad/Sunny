@@ -501,7 +501,7 @@ a {
     grid-template-areas:
       "area1 area2"
       "area3 area3";
-    gap: 1rem;
+    gap: 5rem;
   }
   .center_picture {
     grid-area: area1;
@@ -516,6 +516,13 @@ a {
     text-align: center;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .center_info {
+    margin-left: 15rem;
+  }
+}
+
 /* Grids */
 .grid {
   display: grid;
@@ -1166,6 +1173,12 @@ a {
   object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+  .block-showcase__image > img {
+    width: 45rem;
+    height: 45rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   .block-showcase .media__title {
     font-size: 3.5rem;
@@ -1180,6 +1193,11 @@ a {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-bottom: 1rem;
+  }
+
+  .block-showcase__image > img {
+    width: 50rem;
+    height: 50rem;
   }
 }
 
