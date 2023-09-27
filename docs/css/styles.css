@@ -200,15 +200,12 @@ a {
   width: 280px;
 }
 
-.nav__item > a {
+.nav__item > a,
+.nav__item > span {
   color: #fff;
   opacity: 0.8;
   transition: opacity 0.3s;
   font-weight: bold;
-}
-.nav__item > a:hover {
-  color: #fff;
-  opacity: 1;
   cursor: pointer;
 }
 
@@ -278,12 +275,6 @@ a {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin-top: 2rem;
   padding-bottom: 1.5rem;
-}
-
-.nav__item:hover .subnav__content {
-  opacity: 1;
-  transform: translateY(0);
-  visibility: visible;
 }
 
 @media screen and (min-width: 768px) {
