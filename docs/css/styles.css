@@ -1575,7 +1575,7 @@ tr:hover {
 
 .modal img {
   position: relative;
-  width: 25rem;
+  width: 30rem;
   height: 25rem;
   left: 3.5rem;
   bottom: 10rem;
@@ -1627,7 +1627,7 @@ tr:hover {
 
 @media screen and (min-width: 768px) {
   .modal img {
-    width: 35rem;
+    width: 40rem;
     height: 35rem;
   }
 
@@ -1639,7 +1639,7 @@ tr:hover {
 
 @media screen and (min-width: 1024px) {
   .modal img {
-    width: 45rem;
+    width: 50rem;
     height: 45rem;
   }
 
