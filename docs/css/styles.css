@@ -1499,6 +1499,7 @@ tr:hover {
   width: 20rem;
   height: 20rem;
   max-width: 100%;
+  object-fit: cover;
 }
 
 .photo-thumbnail {
@@ -1541,6 +1542,7 @@ tr:hover {
   height: 25rem;
   left: 3.5rem;
   bottom: 10rem;
+  object-fit: cover;
 }
 
 .modal-arrow-button {
