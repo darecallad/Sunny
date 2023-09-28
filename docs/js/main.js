@@ -44,22 +44,29 @@ document.querySelector(".read-more").addEventListener("click", function () {
   }
 });
 function navBehavior() {
-  const navClickSpans = document.querySelectorAll(".nav__click > span");
-  navClickSpans.forEach((span) =>
-    span.addEventListener("click", function (e) {
-      const parentItem = span.parentElement;
+  const navClickSpans = document.querySelectorAll(".nav__click .list__flex");
+  navClickSpans.forEach((div) =>
+    div.addEventListener("click", function (e) {
+      const parentItem = div.closest(".nav__click");
       const subnav = parentItem.querySelector(".subnav__content");
+      const isActive = div.classList.contains("active");
 
-      if (subnav.style.visibility === "hidden" || !subnav.style.visibility) {
+      if (
+        subnav.style.visibility === "hidden" ||
+        !subnav.style.visibility ||
+        !isActive
+      ) {
         subnav.style.visibility = "visible";
         subnav.style.opacity = "1";
-        subnav.style.maxHeight = "23rem";
+        subnav.style.maxHeight = "25rem";
         subnav.style.transform = "translateY(0)";
+        div.classList.add("active");
       } else {
         subnav.style.visibility = "hidden";
         subnav.style.opacity = "0";
         subnav.style.maxHeight = "0";
         subnav.style.transform = "translateY(-100%)";
+        div.classList.remove("active");
       }
 
       e.stopPropagation();

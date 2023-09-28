@@ -21,11 +21,17 @@
           ><img src="../images/Flogo.png" alt="logo"
         /></a>
         <svg class="icon icon--white nav__toggler">
-          <use xlink:href="../images/sprite.svg#menu"></use>
+          <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="nav__item nav__click">
-            <span> Our Center </span>
+            <div class="list__flex">
+              <span> Our Center </span>
+              <img
+                class="icon collapsible__chevron"
+                src="../images/chevron.svg"
+              />
+            </div>
             <div class="subnav subnav__content">
               <ul class="list collapsible__content sub__collapsible">
                 <li class="subnav__item">
@@ -33,21 +39,26 @@
                     >About us</a
                   >
                 </li>
-                </li>
                 <li class="subnav__item">
                   <a href="https://darecallad.github.io/Sunny/about/ourstaff"
                     >Our Staff</a
                   >
                 </li>
                 <li class="subnav__item">
-                  <a href="https://darecallad.github.io/Sunny/#testimonialtitle">What people are saying</a>
+                  <a href="#testimonialtitle">What people are saying</a>
                 </li>
               </ul>
             </div>
           </li>
           <!--  -->
           <li class="nav__item nav__click">
-            <span> Programs </span>
+            <div class="list__flex">
+              <span> Programs </span>
+              <img
+                class="icon collapsible__chevron"
+                src="../images/chevron.svg"
+              />
+            </div>
             <div class="subnav subnav__content">
               <ul class="list">
                 <li class="subnav__item">
@@ -80,11 +91,21 @@
           </li>
           <!--  -->
           <li class="nav__item">
-            <a href="https://darecallad.github.io/Sunny/locations">Location</a>
+            <div>
+              <a href="https://darecallad.github.io/Sunny/locations"
+                >Location</a
+              >
+            </div>
           </li>
           <!--  -->
           <li class="nav__item nav__click">
-            <span> Admission </span>
+            <div class="list__flex">
+              <span> Admission </span>
+              <img
+                class="icon collapsible__chevron"
+                src="../images/chevron.svg"
+              />
+            </div>
             <div class="subnav subnav__content">
               <ul class="list">
                 <li class="subnav__item">
@@ -102,7 +123,11 @@
           </li>
           <!--  -->
           <li class="nav__item">
-            <a href="https://darecallad.github.io/Sunny/resources">Resources</a>
+            <div>
+              <a href="https://darecallad.github.io/Sunny/resources"
+                >Resources</a
+              >
+            </div>
           </li>
           <!--  -->
         </ul>
@@ -117,7 +142,7 @@
         <ul class="list">
           <li class="list__item">
             <span class="about__point"> Step 1: Campus Visit</span>
-            <p class="about__text ">
+            <p class="about__text">
               Hello! We're excited to meet your family as you explore our
               admissions process. To start, simply request a tour of our
               facility. Our Admissions team will contact you to arrange a date
@@ -126,7 +151,7 @@
           </li>
           <li class="list__item">
             <span class="about__point"> Step 2: Application or Waitlist </span>
-            <p class="about__text ">
+            <p class="about__text">
               Following your visit, you can complete our online application form
               or join our waitlist by submitting a waitlist application form.
               Our team will carefully review your application and may contact
@@ -135,7 +160,7 @@
           </li>
           <li class="list__item">
             <span class="about__point"> Step 3: Enrollment </span>
-            <p class="about__text ">
+            <p class="about__text">
               Upon successful application review and based on program
               availability, your child will receive an admission offer. If your
               child is offered enrollment, we will send you an enrollment
@@ -150,7 +175,7 @@
             <span class="about__point">
               Step 4: Becoming Part of the Community
             </span>
-            <p class="about__text ">
+            <p class="about__text">
               Once you accept the program enrollment, we will provide you with
               additional information, including a parent's handbook. You can
               also schedule preparation days for your child to meet teachers and

@@ -21,11 +21,17 @@
           ><img src="../images/Flogo.png" alt="logo"
         /></a>
         <svg class="icon icon--white nav__toggler">
-          <use xlink:href="../images/sprite.svg#menu"></use>
+          <use xlink:href="images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="nav__item nav__click">
-            <span> Our Center </span>
+            <div class="list__flex">
+              <span> Our Center </span>
+              <img
+                class="icon collapsible__chevron"
+                src="../images/chevron.svg"
+              />
+            </div>
             <div class="subnav subnav__content">
               <ul class="list collapsible__content sub__collapsible">
                 <li class="subnav__item">
@@ -33,21 +39,26 @@
                     >About us</a
                   >
                 </li>
-                </li>
                 <li class="subnav__item">
                   <a href="https://darecallad.github.io/Sunny/about/ourstaff"
                     >Our Staff</a
                   >
                 </li>
                 <li class="subnav__item">
-                  <a href="https://darecallad.github.io/Sunny/#testimonialtitle">What people are saying</a>
+                  <a href="#testimonialtitle">What people are saying</a>
                 </li>
               </ul>
             </div>
           </li>
           <!--  -->
           <li class="nav__item nav__click">
-            <span> Programs </span>
+            <div class="list__flex">
+              <span> Programs </span>
+              <img
+                class="icon collapsible__chevron"
+                src="../images/chevron.svg"
+              />
+            </div>
             <div class="subnav subnav__content">
               <ul class="list">
                 <li class="subnav__item">
@@ -80,11 +91,21 @@
           </li>
           <!--  -->
           <li class="nav__item">
-            <a href="https://darecallad.github.io/Sunny/locations">Location</a>
+            <div>
+              <a href="https://darecallad.github.io/Sunny/locations"
+                >Location</a
+              >
+            </div>
           </li>
           <!--  -->
           <li class="nav__item nav__click">
-            <span> Admission </span>
+            <div class="list__flex">
+              <span> Admission </span>
+              <img
+                class="icon collapsible__chevron"
+                src="../images/chevron.svg"
+              />
+            </div>
             <div class="subnav subnav__content">
               <ul class="list">
                 <li class="subnav__item">
@@ -102,14 +123,18 @@
           </li>
           <!--  -->
           <li class="nav__item">
-            <a href="https://darecallad.github.io/Sunny/resources">Resources</a>
+            <div>
+              <a href="https://darecallad.github.io/Sunny/resources"
+                >Resources</a
+              >
+            </div>
           </li>
           <!--  -->
         </ul>
       </nav>
     </header>
     <!-- About us -->
- 
+
     <section class="block about__block">
       <header class="block__header">
         <h2>About Us</h2>
@@ -121,7 +146,7 @@
         <ul class="list">
           <li class="list__item">
             <span class="about__point"> 1. Safety Above All Else </span>
-            <p class="about__text ">
+            <p class="about__text">
               Safety is our top priority, and we take it very seriously. We
               leave no detail, big or small, unattended when it comes to
               ensuring the well-being of your children. You can trust that your
@@ -132,7 +157,7 @@
             <span class="about__point">
               2. Fostering Personal Development
             </span>
-            <p class="about__text ">
+            <p class="about__text">
               Education extends beyond acquiring knowledge; it's about nurturing
               the social and emotional growth that will serve children
               throughout their lives. In each of our classrooms, we create a
@@ -142,7 +167,7 @@
           </li>
           <li class="list__item">
             <span class="about__point"> 3. Teachers Who Become Family </span>
-            <p class="about__text ">
+            <p class="about__text">
               Our teachers are not just educators; they are caregivers who
               genuinely care. They go beyond the role of teaching, taking into
               account each child's unique needs. At Sunny Child Care, your child

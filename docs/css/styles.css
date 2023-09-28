@@ -127,6 +127,12 @@ a {
   color: var(--color-headings);
 }
 
+.list__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .list--tick .list__item {
   padding-left: 0.5rem;
   margin-bottom: 1rem;
@@ -163,6 +169,11 @@ a {
   background: var(--color-accent);
 }
 
+.icon.collapsible__chevron {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
 /* Navigation Bar */
 
 .nav {
@@ -199,13 +210,18 @@ a {
   width: 280px;
 }
 
-.nav__item > a,
-.nav__item > span {
+.nav__item > div > a,
+.nav__item > div > span {
   color: #fff;
   opacity: 0.8;
   transition: opacity 0.3s;
   font-weight: bold;
   cursor: pointer;
+}
+
+.nav__item > div > a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 
 .nav__toggler {
@@ -230,6 +246,10 @@ a {
 @media screen and (min-width: 768px) {
   .nav > a > img {
     width: 350px;
+  }
+
+  .nav__item > div > a {
+    margin-bottom: 0rem;
   }
 }
 
@@ -256,13 +276,14 @@ a {
 
 .subnav__content {
   background: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   left: 2rem;
+
   margin-bottom: 0.5rem;
   opacity: 0;
   overflow: hidden;
   text-indent: 25px;
-  top: 100%;
+
   transform: translateY(-100%);
   transition: all 0.5s;
   visibility: hidden;
@@ -271,8 +292,12 @@ a {
 }
 .subnav__item {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin-top: 2rem;
+  padding-top: 2rem;
   padding-bottom: 1.5rem;
+}
+
+.subnav__item > a {
+  font-weight: bold;
 }
 
 .subnav__item:last-child {
@@ -301,6 +326,13 @@ a {
 
   .subnav__content {
     position: absolute;
+    top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1146px) {
+  .subnav__content {
+    top: 5.4rem;
   }
 }
 
@@ -329,6 +361,10 @@ a {
   display: block;
   max-height: 100%;
   opacity: 1;
+}
+
+.active .collapsible__chevron {
+  transform: rotate(90deg);
 }
 
 @media screen and (min-width: 768px) {
@@ -1149,6 +1185,7 @@ a {
 .callout-flex .btn {
   flex: 1;
   margin: 0 1.5rem;
+  font-size: 1.4rem;
 }
 
 .callout .btn {
