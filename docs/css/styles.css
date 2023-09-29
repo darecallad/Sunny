@@ -1989,3 +1989,14 @@ form select {
     font-size: 2rem;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .admission_title {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+  }
+  .dropdown-menu {
+    top: 3.6rem;
+    left: 39.7rem;
+  }
+}
