@@ -23,6 +23,15 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
 
   const fullName = `${firstName} ${lastName}`;
 
+  const children = document.querySelectorAll(".admission_row");
+  let childrenDates = [];
+
+  children.forEach((child) => {
+    const month = child.querySelector("input[id^='child_month']").value;
+    const day = child.querySelector("input[id^='child_day']").value;
+    const year = child.querySelector("input[id^='child_year']").value;
+    childrenDates.push({ month, day, year });
+  });
   const contactMethod = document
     .querySelector(".dropdown-toggle")
     .textContent.trim();
@@ -55,6 +64,7 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
       contactMethod: contactMethod,
       startDate: startDate,
       message: message,
+      childrenDates: childrenDates,
     }),
   }).then((response) => {
     if (response.ok) {
