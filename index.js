@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
   res.send("Hello, this is my server!");
 });
 
+//
 app.post("/send-email", (req, res) => {
   let transporter = nodemailer.createTransport({
     service: "gmail",
