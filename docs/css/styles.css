@@ -406,6 +406,11 @@ a {
 .block__header .block__heading {
   font-size: 3.5rem;
 }
+.block__header .block__admission__heading {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
 .block__heading {
   margin-top: 0;
 }
@@ -438,6 +443,10 @@ a {
 }
 .block--blue .btn {
   transition: 0.3s font-size;
+}
+
+.block.block__admission {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .block-center,
@@ -492,6 +501,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .block__header .block__admission__heading {
+    display: none;
+  }
   .block__header {
     margin-top: 6rem;
     margin-bottom: 4rem;
@@ -503,11 +515,20 @@ a {
   .block-daycare {
     margin: 5rem 0;
   }
+
+  .block.block__admission {
+    margin: 4rem 5rem;
+    width: 65rem;
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .block__header .block__heading {
     font-size: 5rem;
+  }
+  .block.block__admission {
+    width: 81rem;
   }
 }
 
@@ -1658,5 +1679,139 @@ tr:hover {
   .modal-arrow-button {
     right: 23rem;
     top: 20rem;
+  }
+}
+
+/* Admission */
+
+.admission_title {
+  display: none;
+}
+
+.admission_section {
+  padding: 2rem 0;
+}
+.admission_basicinfo {
+  font-size: 1.5rem;
+}
+
+.admission_basicinfo::after {
+  content: "*";
+  color: red;
+  margin-left: 5px;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-size: 1.5rem;
+}
+
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  width: 90vw;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  padding: 8px 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.admission_basicinput {
+  height: 5.5rem;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  width: 90vw;
+}
+
+.admission_agreement {
+  line-height: 1;
+}
+
+.admission_textarea {
+  width: 41rem;
+  height: 7.5rem;
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1.5rem;
+  font-size: 2rem;
+}
+
+.admission_btn {
+  align-self: center;
+  background-color: #ffbb5c;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 4rem;
+  width: 15rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form select {
+  margin-bottom: 6rem;
+}
+
+.form_p {
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+.form_first_container {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (min-width: 768px) {
+  .admission_title {
+    display: block;
+    text-align: center;
+    margin-top: 15rem;
+    font-size: 3rem;
+  }
+
+  .admission_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
