@@ -35,7 +35,7 @@ app.post("/send-email", (req, res) => {
   });
 
   let mailOptions = {
-    from: req.body.EMAIL_USER,
+    from: process.env.EMAIL_USER,
     to: "darecallad0000@gmail.com",
     subject: `Message from ${req.body.name}`,
     text: req.body.message,
@@ -43,7 +43,7 @@ app.post("/send-email", (req, res) => {
 
   transporter.sendMail(mailOptions, function (error, info) {
     if (error) {
-      console.log(error);
+      console.log("Complete Error Object:", error);
       res.status(500).send(`Error while sending email: ${error.message}`);
     } else {
       res.send("Email sent.");
