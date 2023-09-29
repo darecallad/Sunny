@@ -1873,6 +1873,7 @@ form select {
 @media screen and (min-width: 768px) {
   .admission_title {
     display: block;
+    padding: 0 5rem;
     text-align: center;
     margin-top: 15rem;
     font-size: 3rem;
@@ -1994,6 +1995,7 @@ form select {
   .admission_title {
     margin-top: 10rem;
     margin-bottom: 2rem;
+    padding: 0 15rem;
   }
   .dropdown-menu {
     top: 3.6rem;
