@@ -43,3 +43,26 @@ document.addEventListener("click", function (event) {
     });
   }
 });
+
+document
+  .getElementById("duplicateButton")
+  .addEventListener("click", function () {
+    const container = document.getElementById("container");
+    const clonableDiv = document.querySelector(".clonableDiv");
+    const clonedDiv = clonableDiv.cloneNode(true);
+
+    let newIdSuffix = Date.now();
+    const inputElements = clonedDiv.querySelectorAll(".admission_basicinput");
+    inputElements.forEach((input) => {
+      input.id += "_" + newIdSuffix;
+    });
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remove";
+    removeBtn.addEventListener("click", function () {
+      clonedDiv.remove();
+    });
+    clonedDiv.appendChild(removeBtn);
+
+    container.appendChild(clonedDiv);
+  });

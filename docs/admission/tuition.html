@@ -148,74 +148,93 @@
         <div class="container">
           <form class="form" id="emailForm">
             <div class="form_first_container">
-              <label class="admission_basicinfo">Your First Name:</label>
-              <input
-                class="admission_basicinput"
-                type="text"
-                id="first_name"
-                placeholder="First Name"
-              />
-              <label class="admission_basicinfo">Your Last Name:</label>
-              <input
-                class="admission_basicinput"
-                type="text"
-                id="last_name"
-                placeholder="Last Name"
-              />
-
-              <label class="admission_basicinfo">Your Email Address:</label>
-              <input
-                class="admission_basicinput"
-                type="email"
-                id="email"
-                placeholder="someone@company.com"
-              />
-              <label class="admission_basicinfo">Your Phone Number:</label>
-              <input
-                class="admission_basicinput"
-                type="number"
-                id="phonenumber"
-                placeholder="xxxxxxxxxx"
-              />
-              <div class="custom-dropdown">
-                <label class="admission_basicinfo">Contact Me by:</label>
-                <button class="dropdown-toggle">contact me by...</button>
-                <div class="dropdown-menu">
-                  <a href="#" role="option" data-value="Email-me">Email Me</a>
-                  <a href="#" role="option" data-value="Phone-me">Phone Call</a>
+              <div class="admission_firstsection">
+                <div class="admission_fone admission_smalldiv">
+                  <label class="admission_basicinfo">Your First Name:</label>
+                  <input
+                    class="admission_basicinput"
+                    type="text"
+                    id="first_name"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="admission_fsecond admission_smalldiv">
+                  <label class="admission_basicinfo">Your Last Name:</label>
+                  <input
+                    class="admission_basicinput"
+                    type="text"
+                    id="last_name"
+                    placeholder="Last Name"
+                  />
+                </div>
+              </div>
+              <div class="admission_email admission_smalldiv">
+                <label class="admission_basicinfo">Your Email Address:</label>
+                <input
+                  class="admission_basicinput"
+                  type="email"
+                  id="email"
+                  placeholder="someone@company.com"
+                />
+              </div>
+              <div class="admission_smalldiv admission_phone">
+                <label class="admission_basicinfo">Your Phone Number:</label>
+                <input
+                  class="admission_basicinput"
+                  type="number"
+                  id="phonenumber"
+                  placeholder="xxxxxxxxxx"
+                />
+              </div>
+              <div class="custom-dropdown admission_smalldiv">
+                <label class="admission_basicinfo admission_flabel"
+                  >Contact Me by:</label
+                >
+                <div>
+                  <button class="dropdown-toggle">contact me by...</button>
+                  <div class="dropdown-menu">
+                    <a href="#" role="option" data-value="Email-me">Email Me</a>
+                    <a href="#" role="option" data-value="Phone-me"
+                      >Phone Call</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
             <p class="form_p">What is your child's date of birth?</p>
-            <div>
-              <div>
-                <label class="admission_basicinfo">Month</label>
-                <input
-                  class="admission_basicinput"
-                  type="number"
-                  id="child_month"
-                  placeholder="MM"
-                />
-              </div>
-              <div>
-                <label class="admission_basicinfo">Day</label>
-                <input
-                  class="admission_basicinput"
-                  type="number"
-                  id="child_day"
-                  placeholder="DD"
-                />
-              </div>
-              <div>
-                <label class="admission_basicinfo">Year</label>
-                <input
-                  class="admission_basicinput"
-                  type="number"
-                  id="child_year"
-                  placeholder="YYYY"
-                />
+            <div id="container">
+              <div class="clonableDiv">
+                <div>
+                  <label class="admission_basicinfo">Month</label>
+                  <input
+                    class="admission_basicinput"
+                    type="number"
+                    id="child_month"
+                    placeholder="MM"
+                  />
+                </div>
+
+                <div>
+                  <label class="admission_basicinfo">Day</label>
+                  <input
+                    class="admission_basicinput"
+                    type="number"
+                    id="child_day"
+                    placeholder="DD"
+                  />
+                </div>
+                <div>
+                  <label class="admission_basicinfo">Year</label>
+                  <input
+                    class="admission_basicinput"
+                    type="number"
+                    id="child_year"
+                    placeholder="YYYY"
+                  />
+                </div>
               </div>
             </div>
+            <button id="duplicateButton">Duplicate</button>
             <div class="custom-dropdown">
               <label class="admission_basicinfo">Desined Start Date:</label>
               <button class="dropdown-toggle">We'd like to start in...</button>
