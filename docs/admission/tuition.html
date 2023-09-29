@@ -186,12 +186,15 @@
                   placeholder="xxxxxxxxxx"
                 />
               </div>
+
               <div class="custom-dropdown admission_smalldiv">
                 <label class="admission_basicinfo admission_flabel"
                   >Contact Me by:</label
                 >
                 <div>
-                  <button class="dropdown-toggle">contact me by...</button>
+                  <button class="dropdown-toggle" type="button">
+                    contact me by...
+                  </button>
                   <div class="dropdown-menu">
                     <a href="#" role="option" data-value="Email-me">Email Me</a>
                     <a href="#" role="option" data-value="Phone-me"
@@ -201,52 +204,67 @@
                 </div>
               </div>
             </div>
-            <p class="form_p">What is your child's date of birth?</p>
-            <div id="container">
-              <div class="clonableDiv">
-                <div>
-                  <label class="admission_basicinfo">Month</label>
-                  <input
-                    class="admission_basicinput"
-                    type="number"
-                    id="child_month"
-                    placeholder="MM"
-                  />
-                </div>
+            <div class="outerWrapper">
+              <div id="container" class="admission_childcontainer">
+                <div class="admission_row">
+                  <p class="form_p">What is your child's date of birth?</p>
+                  <div class="clonableDiv admission_childcontainerdiv">
+                    <div class="admission_smalldiv admission_child">
+                      <label class="admission_basicinfo">Month</label>
+                      <input
+                        class="admission_basicinput"
+                        type="number"
+                        id="child_month"
+                        placeholder="MM"
+                      />
+                    </div>
 
-                <div>
-                  <label class="admission_basicinfo">Day</label>
-                  <input
-                    class="admission_basicinput"
-                    type="number"
-                    id="child_day"
-                    placeholder="DD"
-                  />
+                    <div class="admission_smalldiv admission_child">
+                      <label class="admission_basicinfo">Day</label>
+                      <input
+                        class="admission_basicinput"
+                        type="number"
+                        id="child_day"
+                        placeholder="DD"
+                      />
+                    </div>
+                    <div class="admission_smalldiv admission_child">
+                      <label class="admission_basicinfo">Year</label>
+                      <input
+                        class="admission_basicinput"
+                        type="number"
+                        id="child_year"
+                        placeholder="YYYY"
+                      />
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <label class="admission_basicinfo">Year</label>
-                  <input
-                    class="admission_basicinput"
-                    type="number"
-                    id="child_year"
-                    placeholder="YYYY"
-                  />
+              </div>
+              <button id="duplicateButton" class="admission_addbtn">
+                ADD ANOTHER CHILD <span class="admission_btnSymbol">+</span>
+              </button>
+            </div>
+            <div class="admission_startcontainer admission_smalldiv">
+              <div class="custom-dropdown">
+                <label class="admission_basicinfo admission_flabel"
+                  >Desined Start Date:</label
+                >
+                <button class="dropdown-toggle" type="button">
+                  We'd like to start in...
+                </button>
+                <div class="dropdown-menu">
+                  <a href="#" role="option" data-value="0">Within a Month</a>
+                  <a href="#" role="option" data-value="1.3">1-3 Months</a>
+                  <a href="#" role="option" data-value="3.6">3-6 Months</a>
+                  <a href="#" role="option" data-value="6.9">6-9 Months</a>
+                  <a href="#" role="option" data-value="10">9 Month+</a>
+                  <a href="#" role="option" data-value="X"
+                    >Unsure at this time</a
+                  >
                 </div>
               </div>
             </div>
-            <button id="duplicateButton">Duplicate</button>
-            <div class="custom-dropdown">
-              <label class="admission_basicinfo">Desined Start Date:</label>
-              <button class="dropdown-toggle">We'd like to start in...</button>
-              <div class="dropdown-menu">
-                <a href="#" role="option" data-value="0">Within a Month</a>
-                <a href="#" role="option" data-value="1.3">1-3 Months</a>
-                <a href="#" role="option" data-value="3.6">3-6 Months</a>
-                <a href="#" role="option" data-value="6.9">6-9 Months</a>
-                <a href="#" role="option" data-value="10">9 Month+</a>
-                <a href="#" role="option" data-value="X">Unsure at this time</a>
-              </div>
-            </div>
+
             <div class="form_comment">
               <label>Comments or questions:</label>
               <textarea

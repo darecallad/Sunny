@@ -1,6 +1,8 @@
 // Handle dropdown toggle
 document.querySelectorAll(".dropdown-toggle").forEach(function (toggleButton) {
-  toggleButton.addEventListener("click", function () {
+  toggleButton.addEventListener("click", function (e) {
+    e.stopPropagation(); // Prevent the event from bubbling up
+
     // Get the associated dropdown menu for the clicked button
     var menu = toggleButton.nextElementSibling;
 
@@ -23,6 +25,7 @@ document.querySelectorAll(".dropdown-toggle").forEach(function (toggleButton) {
 document.querySelectorAll(".dropdown-menu a").forEach(function (option) {
   option.addEventListener("click", function (e) {
     e.preventDefault(); // Prevent default link behavior
+    e.stopPropagation(); // Prevent the event from bubbling up
 
     var dropdown = option.closest(".custom-dropdown");
     var toggleButton = dropdown.querySelector(".dropdown-toggle");
@@ -48,21 +51,24 @@ document
   .getElementById("duplicateButton")
   .addEventListener("click", function () {
     const container = document.getElementById("container");
-    const clonableDiv = document.querySelector(".clonableDiv");
-    const clonedDiv = clonableDiv.cloneNode(true);
+    const clonableRow = document.querySelector(".admission_row");
+    const clonedRow = clonableRow.cloneNode(true);
 
     let newIdSuffix = Date.now();
-    const inputElements = clonedDiv.querySelectorAll(".admission_basicinput");
+    const inputElements = clonedRow.querySelectorAll(".admission_basicinput");
     inputElements.forEach((input) => {
       input.id += "_" + newIdSuffix;
     });
 
     const removeBtn = document.createElement("button");
-    removeBtn.textContent = "Remove";
+    removeBtn.textContent = "-";
+    removeBtn.classList.add("admission_removebtn");
     removeBtn.addEventListener("click", function () {
-      clonedDiv.remove();
+      clonedRow.remove();
     });
-    clonedDiv.appendChild(removeBtn);
 
-    container.appendChild(clonedDiv);
+    const clonableDiv = clonedRow.querySelector(".clonableDiv");
+    clonableDiv.insertBefore(removeBtn, clonableDiv.firstChild);
+
+    container.appendChild(clonedRow);
   });

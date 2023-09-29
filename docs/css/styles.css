@@ -1711,6 +1711,7 @@ input::placeholder {
   position: relative;
   display: inline-block;
   width: 90vw;
+  margin-bottom: 2rem;
 }
 
 .dropdown-toggle {
@@ -1803,6 +1804,72 @@ form select {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+
+.form_p {
+  visibility: hidden;
+}
+
+.admission_row:first-child .form_p {
+  visibility: visible;
+}
+
+.admission_removebtn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 4px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 1rem;
+}
+.admission_removebtn:hover,
+.admission_btnSymbol:hover {
+  background-color: var(--color-headings); /* Navy blue background on hover */
+}
+
+.admission_addbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  color: var(--color-headings);
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.admission_addbtn:hover {
+  border: 2px solid #ffbb5c;
+  background-color: #fff;
+}
+
+.admission_btnSymbol {
+  display: inline-block;
+  margin-left: 1.5rem;
+  background-color: #ffbb5c;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.outerWrapper {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
 @media screen and (min-width: 768px) {
   .admission_title {
     display: block;
@@ -1862,5 +1929,63 @@ form select {
     position: absolute;
     top: 4.5rem;
     left: 32.7rem;
+  }
+  .admission_child {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+  }
+
+  .admission_child .admission_basicinput {
+    width: 80%;
+  }
+
+  .admission_childcontainer,
+  .admission_childcontainerdiv {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .admission_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form_p:first {
+    display: block;
+  }
+
+  .outerWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .admission_addbtn {
+    margin-top: 0;
+  }
+
+  .admission_startcontainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .form_comment label {
+    display: flex;
+    margin-bottom: 1rem;
+    font-size: 2rem;
   }
 }
