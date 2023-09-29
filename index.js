@@ -9,7 +9,7 @@ const cors = require("cors");
 app.use(bodyParser.json());
 
 const corsOptions = {
-  origin: ["https://darecallad.github.io", "https://www.sunnychildcare.com"],
+  origin: "https://www.sunnychildcare.com",
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   preflightContinue: false,
   optionsSuccessStatus: 204,
@@ -35,8 +35,8 @@ app.post("/send-email", (req, res) => {
   });
 
   let mailOptions = {
-    from: req.body.EMAIL_USER,
-    to: "darecallad0000@gmail.com",
+    from: process.env.EMAIL_USER,
+    to: "darecallad00@gmail.com",
     subject: `Message from ${req.body.name}`,
     text: req.body.message,
   };
