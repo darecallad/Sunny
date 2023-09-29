@@ -38,7 +38,7 @@ app.post("/send-email", (req, res) => {
     from: process.env.EMAIL_USER,
     to: "darecallad00@gmail.com",
     subject: `Message from ${req.body.name}`,
-    text: req.body.message,
+    text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phoneNumber}\nMethod: ${req.body.contactMethod}\nStart Date: ${req.body.startDate}\nMessage: ${req.body.message}`,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
