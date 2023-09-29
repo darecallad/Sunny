@@ -518,7 +518,7 @@ a {
 
   .block.block__admission {
     margin: 0;
-    padding: 3rem 5rem;
+    padding: 0 5rem 3rem 5rem;
     width: 74rem;
     height: auto;
   }
