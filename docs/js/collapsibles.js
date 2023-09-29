@@ -49,6 +49,3 @@ document.addEventListener("click", function (e) {
 });
 
 navBehavior();
-
-// 當視窗大小改變時執行
-window.addEventListener("resize", adjustLayout);
