@@ -1,3 +1,17 @@
+// Update dropdown button text when an option is selected
+document.querySelectorAll(".dropdown-menu a").forEach((option) => {
+  option.addEventListener("click", function (e) {
+    e.preventDefault();
+    let dropdownButton = e.target
+      .closest(".custom-dropdown")
+      .querySelector(".dropdown-toggle");
+    dropdownButton.textContent = e.target.textContent;
+
+    // Hide the dropdown menu after a selection
+    e.target.closest(".dropdown-menu").style.display = "none";
+  });
+});
+
 document.getElementById("emailForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -15,6 +29,19 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
   const startDate = document
     .querySelectorAll(".dropdown-toggle")[1]
     .textContent.trim();
+
+  // Data validation
+  if (
+    !firstName ||
+    !lastName ||
+    !email ||
+    !phoneNumber ||
+    contactMethod === "contact me by..." ||
+    startDate === "We'd like to start in..."
+  ) {
+    alert("Please fill out all the required fields!");
+    return;
+  }
 
   fetch("https://sunnyemail-19d950067d7d.herokuapp.com/send-email", {
     method: "POST",
