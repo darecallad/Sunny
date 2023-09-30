@@ -1609,11 +1609,10 @@ tr:hover {
 
 .modal img {
   position: relative;
-  width: 30rem;
-  height: 25rem;
+  width: 90%;
   left: 3.5rem;
   bottom: 10rem;
-  object-fit: cover;
+  overflow: visible;
 }
 
 .modal-arrow-button {
@@ -1660,11 +1659,6 @@ tr:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .modal img {
-    width: 40rem;
-    height: 35rem;
-  }
-
   .modal-arrow-button {
     right: 18.5rem;
     top: 15rem;
@@ -1672,11 +1666,6 @@ tr:hover {
 }
 
 @media screen and (min-width: 1024px) {
-  .modal img {
-    width: 50rem;
-    height: 45rem;
-  }
-
   .modal-arrow-button {
     right: 23rem;
     top: 20rem;
