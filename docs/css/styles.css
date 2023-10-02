@@ -577,6 +577,12 @@ a {
   margin: 0 auto;
 }
 
+.container.feature {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
 .download-container {
   margin: 4rem 1rem;
 }
@@ -624,6 +630,23 @@ a {
 @media screen and (min-width: 1024px) {
   .center_info {
     margin-left: 15rem;
+  }
+
+  .container.feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "area1 area2";
+  }
+
+  .feature_left {
+    grid-area: area1;
+  }
+
+  .feature_divimage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
   }
 }
 
@@ -804,30 +827,30 @@ a {
 
 /* Cards */
 .card {
-  border-radius: 20px;
   box-shadow: 0 0 20px 5px #f3f3f3;
-  overflow: hidden;
+  border-radius: 20px;
 }
 
 .card__header {
-  background: var(--color-primary);
+  background: #f1a828;
   display: flex;
   align-items: center;
   flex-direction: column;
-  opacity: 0.85;
   color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .card__body {
   text-align: center;
+  border: 1px solid #f1a828;
+  border-top: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .card__body p {
   font-size: 1.5rem;
-  color: var(--color-headings);
-}
-
-.card__body .link-arrow {
   color: var(--color-headings);
 }
 
@@ -850,7 +873,21 @@ a {
 
 .block-plans .block__header {
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+}
+
+.block-upcoming {
+  position: relative;
+}
+
+.block-upcoming::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width: 90%;
+  border-bottom: 1px solid rgba(203 198 198 / 50%);
 }
 
 @media screen and (min-width: 1024px) {
@@ -1172,6 +1209,7 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 
 .feature__heading .icon-container {
@@ -1215,6 +1253,7 @@ a {
 @media screen and (min-width: 1024px) {
   .feature {
     gap: 2rem 5rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -1398,10 +1437,19 @@ a {
   content: close-quote;
 }
 
+.about__image {
+  width: 20rem;
+}
+
 @media screen and (min-width: 1024px) {
   .about__text,
   .daycare__text {
     font-size: 2rem;
+  }
+
+  .about_teacher,
+  .about__lightball {
+    width: 25rem;
   }
 }
 
@@ -1409,6 +1457,9 @@ a {
   .about__block {
     margin-top: 6rem;
     padding: 2rem 6rem;
+  }
+  .about__firstlane {
+    font-size: 2.5rem;
   }
 }
 
