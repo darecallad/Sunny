@@ -421,11 +421,11 @@ a {
 }
 
 .block--staff {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 5rem;
 }
 
 .block--green {
@@ -552,6 +552,10 @@ a {
 
   .block__heading.hero__h1 {
     box-shadow: none;
+  }
+
+  .block--staff {
+    align-content: center;
   }
 
   .block-center,
@@ -862,6 +866,12 @@ a {
   border-radius: 20px;
 }
 
+.card_container {
+  background: #fff;
+  margin: 1rem;
+  cursor: pointer;
+}
+
 .card__header {
   background: #f1a828;
   display: flex;
@@ -873,20 +883,44 @@ a {
 }
 
 .card_staff {
-  background: #fff;
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   color: var(--color-headings);
-  height: 30rem;
-  width: 25rem;
+  width: auto;
+  padding: 1rem;
 }
 
 .card_staff_body {
-  text-align: center;
+  padding-top: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.card_staff_body.visible {
+  display: block;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+.staff_name {
+  padding-left: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.staff_title {
+  font-size: 1.4rem;
+  display: block;
+  padding-left: 2rem;
+}
+.staff_image {
+  width: 6.5rem;
+  height: 5.7rem;
 }
 
 .card_staff_header {
+  display: flex;
   text-align: center;
   width: 100%;
 }
@@ -907,6 +941,90 @@ a {
 .card__header,
 .card__body {
   padding: 2rem 3rem;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card_staff_header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .staff_image {
+    width: 26.8rem;
+    height: 24.7rem;
+    align-self: center;
+  }
+
+  .card_staff_body {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .card_staff {
+    padding: 3.6rem;
+    width: 34rem;
+    height: 62.2rem;
+  }
+
+  .staff_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+  }
+
+  .card_staff_body {
+    display: block;
+  }
+
+  .card_container {
+    cursor: auto;
+  }
+
+  .staff_name {
+    padding-left: 0;
+    margin-top: 2rem;
+    display: block;
+  }
+
+  .staff_title {
+    padding-left: 0;
+    position: relative;
+    display: inline-block;
+  }
+
+  .staff_text_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .staff_title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 2px;
+    background-color: #76addd;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .staff_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* Plans Block */
