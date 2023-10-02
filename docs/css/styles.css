@@ -182,7 +182,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 4;
-  background: var(--color-primary);
+  background: rgba(0, 0, 0, 0.2);
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -274,7 +274,7 @@ a {
 }
 
 .subnav__content {
-  background: var(--color-primary);
+  background: rgba(0, 0, 0, 0.8);
   font-size: 1.7rem;
   left: 2rem;
 
@@ -417,10 +417,6 @@ a {
 .block--blue {
   background: #ecf8f9;
   color: #fff;
-}
-
-.block--blue.hero {
-  margin-top: 5rem;
 }
 
 .block--blue a {
@@ -656,6 +652,7 @@ a {
 .hero .block__heading {
   text-align: center;
   margin-bottom: 0;
+  margin-top: 5rem;
 }
 .hero .container {
   display: flex;
@@ -681,6 +678,10 @@ a {
 
   .hero__tagline-small {
     display: none;
+  }
+
+  .hero .block__heading {
+    margin-top: 0;
   }
 
   .hero .grid {
