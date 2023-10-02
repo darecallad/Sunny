@@ -419,6 +419,15 @@ a {
   color: #fff;
 }
 
+.block--green {
+  background: #4da45f;
+}
+
+.block--green__header {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
 .block--blue a {
   color: #ffbb5c;
   opacity: 1;
@@ -520,6 +529,9 @@ a {
 @media screen and (min-width: 768px) {
   .block__header .block__admission__heading {
     display: none;
+  }
+  .block--green__header {
+    font-size: 5rem;
   }
   .block__header {
     margin-top: 6rem;
@@ -761,6 +773,12 @@ a {
   color: #fff;
 }
 
+.admission_btn.btn-small {
+  font-size: 1.3rem;
+  width: 10rem;
+  height: 4rem;
+}
+
 .btn--primary:hover {
   background: #3a8ffd;
 }
@@ -808,6 +826,11 @@ a {
   padding-right: 4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .read-more-btn {
+    display: none;
+  }
+}
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -1375,6 +1398,10 @@ a {
   background-image: url(../images/ourcenter/V.webp);
 }
 
+.banner_staff {
+  background-image: url(../images/ourcenter/staffbanner.webp);
+}
+
 .banner_section {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1387,6 +1414,9 @@ a {
 }
 /* About  */
 
+.about_staff {
+  margin-top: 3rem;
+}
 .about_header {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -1399,7 +1429,11 @@ a {
 }
 
 .about__text.about__space {
-  text-indent: 25px;
+  text-indent: 50px;
+}
+
+.more-text {
+  display: none;
 }
 
 .about__point,
@@ -1460,6 +1494,12 @@ a {
   }
   .about__firstlane {
     font-size: 2.5rem;
+  }
+  .more-text {
+    display: inline;
+  }
+  .more-text-2 {
+    display: block;
   }
 }
 

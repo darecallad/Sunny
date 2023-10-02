@@ -87,3 +87,16 @@ document.addEventListener("click", function (e) {
 });
 
 navBehavior();
+
+document.querySelector(".read-more-btn").addEventListener("click", function () {
+  var moreText = document.querySelector(".more-text");
+  var btn = document.querySelector(".read-more-btn");
+
+  if (moreText.style.display === "none" || moreText.style.display === "") {
+    moreText.style.display = "inline";
+    btn.textContent = "Read Less";
+  } else {
+    moreText.style.display = "none";
+    btn.textContent = "Read More";
+  }
+});
