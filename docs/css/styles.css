@@ -555,7 +555,7 @@ a {
   background-image: url(../images/banner/banner2x.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50%;
+  background-position: 50% 50%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1330,8 +1330,29 @@ a {
   }
 }
 
+/* Banner */
+
+.banner_about {
+  background-image: url(../images/ourcenter/V.webp);
+}
+
+.banner_section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 /* About  */
 
+.about_header {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin-bottom: 10rem;
+}
 .about__text,
 .daycare__text {
   font-size: 1.8rem;
@@ -1352,7 +1373,11 @@ a {
 }
 
 .about__firstlane {
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+
+.about__firstdiv {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .about__block .block__header {
@@ -1379,6 +1404,7 @@ a {
 @media screen and (min-width: 768px) {
   .about__block {
     margin-top: 6rem;
+    padding: 2rem 6rem;
   }
 }
 
