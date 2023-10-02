@@ -425,7 +425,7 @@ a {
 
 .block--blue a {
   color: #ffbb5c;
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 0.3s ease-out;
 }
 
@@ -483,7 +483,9 @@ a {
 .block--blue h1,
 .block--blue h2,
 .block--blue h3 {
-  color: #393e46;
+  color: #fff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .block--blue h1 {
@@ -526,6 +528,11 @@ a {
   .block__header h2 {
     font-size: 5rem;
   }
+
+  .block--blue h1 {
+    box-shadow: none;
+  }
+
   .block-center,
   .block-daycare {
     margin: 5rem 0;
@@ -537,6 +544,18 @@ a {
     width: 74rem;
     height: auto;
   }
+
+  .block__header .hero__tagline {
+    color: #393e46;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.block.hero {
+  background-image: url(../images/banner/banner2x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -564,7 +583,6 @@ a {
 
 .container .hero__tagline {
   text-align: left;
-  padding: 0 2rem 4rem;
   display: none;
 }
 
@@ -577,6 +595,8 @@ a {
 @media screen and (min-width: 768px) {
   .container .hero__tagline {
     display: block;
+    padding: 5rem 5rem;
+    margin: 4rem 12rem;
   }
 
   .container-center {
@@ -624,7 +644,7 @@ a {
 /* Heros */
 .hero__tagline {
   font-size: 1.8rem;
-  opacity: 0.9;
+  opacity: 1;
   color: #fff;
   margin: 2rem 1rem;
 }
@@ -644,7 +664,8 @@ a {
 }
 
 .hero__tagline-small {
-  color: var(--color-headings);
+  color: #fff;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
   text-transform: uppercase;
 }
@@ -681,16 +702,14 @@ a {
     grid-area: area3;
     justify-self: center;
   }
+  .hero .block__heading {
+    margin-top: 5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .hero__content {
     margin-right: 4rem;
-  }
-
-  .btn-hero {
-    position: relative;
-    right: 7rem;
   }
 }
 
