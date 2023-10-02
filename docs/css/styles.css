@@ -213,8 +213,7 @@ a {
 .nav__item > div > a,
 .nav__item > div > span {
   color: #fff;
-  opacity: 0.8;
-  transition: opacity 0.3s;
+
   font-weight: bold;
   cursor: pointer;
 }
@@ -497,7 +496,23 @@ a {
 }
 .block--skewed-left {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 70%,
+    95% 72%,
+    90% 74%,
+    85% 76%,
+    80% 78%,
+    75% 80%,
+    70% 82%,
+    60% 85%,
+    50% 88%,
+    40% 91%,
+    30% 94%,
+    15% 97%,
+    0% 100%
+  );
 }
 
 @media screen and (min-width: 768px) {
@@ -531,11 +546,15 @@ a {
   .block.block__admission {
     width: 81rem;
   }
+
+  .blokc-upcoming,
+  .block-why {
+    max-width: 100%;
+  }
 }
 
 /* Container */
 .container {
-  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -1271,6 +1290,7 @@ a {
   .block.container {
     margin-left: 0;
     padding-left: 0;
+    margin-right: 0;
   }
 
   .block--white .container {
