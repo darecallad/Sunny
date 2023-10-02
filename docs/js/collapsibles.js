@@ -7,11 +7,31 @@ collapsibles.forEach((item) =>
 
 function navBehavior() {
   const navClickSpans = document.querySelectorAll(".nav__click .list__flex");
+
+  // close all subnav
+  function closeAllSubnavs() {
+    const allSubnavs = document.querySelectorAll(".subnav__content");
+    allSubnavs.forEach((subnav) => {
+      subnav.style.visibility = "hidden";
+      subnav.style.opacity = "0";
+      subnav.style.maxHeight = "0";
+      subnav.style.transform = "translateY(-100%)";
+      subnav
+        .closest(".nav__click")
+        .querySelector(".list__flex")
+        .classList.remove("active");
+    });
+  }
+
   navClickSpans.forEach((div) =>
     div.addEventListener("click", function (e) {
       const parentItem = div.closest(".nav__click");
       const subnav = parentItem.querySelector(".subnav__content");
       const isActive = div.classList.contains("active");
+
+      if (!isActive) {
+        closeAllSubnavs();
+      }
 
       if (
         subnav.style.visibility === "hidden" ||
@@ -35,6 +55,24 @@ function navBehavior() {
     })
   );
 }
+
+document.addEventListener("click", function (e) {
+  const subnavs = document.querySelectorAll(".subnav__content");
+  subnavs.forEach((subnav) => {
+    if (!e.target.closest(".nav__click")) {
+      subnav.style.visibility = "hidden";
+      subnav.style.opacity = "0";
+      subnav.style.maxHeight = "0";
+      subnav.style.transform = "translateY(-100%)";
+
+      // 移除 active class
+      subnav
+        .closest(".nav__click")
+        .querySelector(".list__flex")
+        .classList.remove("active");
+    }
+  });
+});
 
 document.addEventListener("click", function (e) {
   const subnavs = document.querySelectorAll(".subnav__content");
