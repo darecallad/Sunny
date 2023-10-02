@@ -482,7 +482,7 @@ a {
   color: var(--color-headings);
 }
 
-.hero__h1 {
+.block__heading.hero__h1 {
   color: #fff;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
@@ -529,7 +529,7 @@ a {
     font-size: 5rem;
   }
 
-  .block--blue h1 {
+  .block__heading.hero__h1 {
     box-shadow: none;
   }
 
