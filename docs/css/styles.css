@@ -1378,6 +1378,10 @@ a {
 
 .about__firstdiv {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
 }
 
 .about__block .block__header {
