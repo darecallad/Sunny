@@ -1548,6 +1548,24 @@ a {
   background-image: url(../images/ourcenter/staffbanner.webp);
 }
 
+.banner_menu {
+  background-image: url(../images/programs/menu.webp);
+}
+.banner_preschool {
+  background-image: url(../images/programs/preschool.webp);
+}
+.banner_king {
+  background-image: url(../images/programs/king.webp);
+}
+.banner_center {
+  background-image: url(../images/center/center.webp);
+}
+
+.banner_section.banner_infant {
+  background-image: url(../images/programs/infant.webp);
+  background-position: 50% 60%;
+}
+
 .banner_section {
   background-repeat: no-repeat;
   background-size: cover;
