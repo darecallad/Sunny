@@ -201,7 +201,7 @@ a {
   display: flex;
   justify-content: center;
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid rgb(95, 188, 220);
+  border-bottom: 1px solid rgb(242, 244, 245);
   flex-direction: column;
   align-items: left;
   position: relative;
@@ -235,7 +235,7 @@ a {
 
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 3px rgb(95, 188, 220);
+  box-shadow: 0 0 0 3px rgb(242, 244, 245);
   border-radius: 5px;
 }
 
@@ -1284,13 +1284,13 @@ a {
 .footer {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  background: var(--color-primary);
-  opacity: 0.8;
+  background: rgb(39, 70, 111);
+  opacity: 1;
 }
 
 .footer__section {
   padding: 2rem;
-  border-bottom: 1px solid rgb(95, 188, 220);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.5);
 }
 
 .footer__section p {
