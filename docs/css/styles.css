@@ -429,7 +429,7 @@ a {
 }
 
 .block--green {
-  background: #4da45f;
+  background: #27466f;
 }
 
 .block--green__header {
@@ -870,6 +870,7 @@ a {
   background: #fff;
   margin: 1rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .card__header {
@@ -1463,8 +1464,8 @@ a {
 
 .callout-flex .btn {
   flex: 1;
-  margin: 0 1.5rem;
-  font-size: 1.4rem;
+  margin: 0 1rem;
+  font-size: 1.3rem;
 }
 
 .callout .btn {
