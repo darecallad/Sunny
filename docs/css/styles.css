@@ -680,10 +680,8 @@ a {
   }
 
   .feature_divimage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+    display: grid;
+    place-items: center;
   }
 }
 
@@ -1439,6 +1437,10 @@ a {
     gap: 2rem 5rem;
     margin-bottom: 8rem;
   }
+
+  .feature__content {
+    height: 30rem;
+  }
 }
 
 /* Callouts */
@@ -1558,6 +1560,10 @@ a {
 .banner_about {
   background-image: url(../images/ourcenter/V.webp);
 }
+.banner_tuition {
+  background-image: url(../images/admission/pexels-yan-krukau-8612925.jpg);
+  background-position: 50% 70%;
+}
 
 .banner_staff {
   background-image: url(../images/ourcenter/staffbanner.webp);
@@ -1590,7 +1596,6 @@ a {
 .banner_section {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
   padding-top: 5rem;
   display: flex;
   flex-direction: column;
@@ -1613,6 +1618,9 @@ a {
   color: var(--color-headings);
 }
 
+.about__text {
+  padding: 2rem;
+}
 .about__text.about__space {
   text-indent: 50px;
 }
@@ -1660,12 +1668,29 @@ a {
   width: 20rem;
 }
 .about__block {
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
 }
 
 .about_container {
   padding: 1rem 3rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.about_textcontainer {
+  background: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.about_our {
+  background-image: url(../images/frame/frame3.png);
+  background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-size: 25rem 7em;
+  height: 10rem;
+}
+
+.about_our h2 {
+  padding-top: 3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -1682,6 +1707,18 @@ a {
   .more-text-2 {
     display: block;
   }
+
+  .about_our {
+    background-image: url(../images/frame/frame3.png);
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: 40rem 7em;
+    height: 10rem;
+  }
+  .about_our h2 {
+    font-size: 4rem;
+    padding-top: 2.5rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1690,13 +1727,45 @@ a {
     font-size: 2rem;
   }
 
+  .about__text {
+    padding: 0 5rem;
+  }
+
   .about__block {
-    padding: 2rem 8rem;
+    padding: 2rem 10rem;
   }
 
   .about_teacher,
   .about__lightball {
     width: 25rem;
+  }
+  .about_frame1 {
+    background-image: url(../images/frame/frame1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 52rem 28rem;
+  }
+  .about_frame2 {
+    background-image: url(../images/frame/frame2.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 52rem 28rem;
+  }
+
+  .about_our {
+    background-image: url(../images/frame/frame3.png);
+
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: 40rem 20rem;
+    height: 18rem;
+  }
+
+  .about__firstcontent {
+    padding-top: 4rem;
+  }
+  .about__lastcontent {
+    padding-bottom: 4rem;
   }
 }
 
