@@ -8,6 +8,7 @@
   --color-body: #918ca4;
   --color-border: #ccc;
   --color-body-darker: #5c5577;
+  --color-body-gray: #f5f5f5;
   --border-radius: 30px;
 }
 
@@ -388,6 +389,10 @@ a {
   max-height: 0.5rem;
 }
 
+.block--grew {
+  background-color: #f5f5f5;
+}
+
 .block-photo {
   padding: 0;
 }
@@ -464,7 +469,9 @@ a {
 }
 
 .block.block__admission {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.1), 0px -1px 3px rgba(0, 0, 0, 0.1),
+    0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  background: #fff;
 }
 
 .block-center,
@@ -582,7 +589,7 @@ a {
 }
 
 .block.hero {
-  background-image: url(../images/banner/banner2x.webp);
+  background-image: url(../images/banner/pexels-yan-krukau-8612914.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -1287,7 +1294,6 @@ a {
 /* Footer */
 
 .footer {
-  margin-top: 5rem;
   margin-bottom: 5rem;
   background: rgb(39, 70, 111);
   opacity: 1;
@@ -1653,17 +1659,13 @@ a {
 .about__image {
   width: 20rem;
 }
+.about__block {
+  padding: 2rem 4rem;
+}
 
-@media screen and (min-width: 1024px) {
-  .about__text,
-  .daycare__text {
-    font-size: 2rem;
-  }
-
-  .about_teacher,
-  .about__lightball {
-    width: 25rem;
-  }
+.about_container {
+  padding: 1rem 3rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 @media screen and (min-width: 768px) {
@@ -1679,6 +1681,22 @@ a {
   }
   .more-text-2 {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about__text,
+  .daycare__text {
+    font-size: 2rem;
+  }
+
+  .about__block {
+    padding: 2rem 8rem;
+  }
+
+  .about_teacher,
+  .about__lightball {
+    width: 25rem;
   }
 }
 
@@ -2023,7 +2041,8 @@ tr:hover {
 }
 
 .admission_section {
-  padding: 2rem 0;
+  padding: 2rem;
+  background: #f5f5f5;
 }
 .admission_basicinfo {
   font-size: 1.5rem;
@@ -2212,8 +2231,10 @@ form select {
     display: block;
     padding: 0 5rem;
     text-align: center;
-    margin-top: 15rem;
-    font-size: 3rem;
+    margin-top: 5rem;
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 5rem;
   }
 
   .admission_section {
@@ -2331,8 +2352,9 @@ form select {
 @media screen and (min-width: 1024px) {
   .admission_title {
     margin-top: 10rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     padding: 0 15rem;
+    font-size: 2.5rem;
   }
   .dropdown-menu {
     top: 3.6rem;
