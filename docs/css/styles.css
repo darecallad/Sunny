@@ -383,6 +383,11 @@ a {
   padding: var(--padding-vertical) 2rem;
 }
 
+.block--orange {
+  background-color: #ffbb5c;
+  max-height: 0.5rem;
+}
+
 .block-photo {
   padding: 0;
 }
@@ -1347,6 +1352,10 @@ a {
     margin-top: 10rem;
   }
 
+  .footer {
+    margin-bottom: 0;
+  }
+
   .footer__copyright {
     font-size: 1.5rem;
   }
@@ -1559,6 +1568,12 @@ a {
 }
 .banner_center {
   background-image: url(../images/center/center.webp);
+}
+.banner_process {
+  background-image: url(../images/admission/AdobeStock_116931226.jpeg);
+}
+.banner_progessbot {
+  background-image: url(../images/admission/AdobeStock_115717709.jpeg);
 }
 
 .banner_section.banner_infant {
@@ -2018,6 +2033,10 @@ tr:hover {
   content: "*";
   color: red;
   margin-left: 5px;
+}
+
+.admission_footer {
+  margin-top: 0;
 }
 
 input::placeholder {
