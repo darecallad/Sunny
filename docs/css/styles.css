@@ -1571,7 +1571,7 @@ a {
 .banner_staff_bot {
   background-image: url(../images/ourcenter/AdobeStock_592457451.jpeg);
   background-position: 50% 50%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -1590,8 +1590,10 @@ a {
 .banner_process {
   background-image: url(../images/admission/AdobeStock_116931226.jpeg);
 }
-.banner_progessbot {
+.banner_section.banner_progessbot {
   background-image: url(../images/admission/AdobeStock_115717709.jpeg);
+  background-size: contain;
+  background-position: 50% 50%;
 }
 
 .banner_section.banner_infant {
@@ -1618,6 +1620,7 @@ a {
   background: #fff;
   padding: 3rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+  max-width: 108rem;
 }
 
 .staff_container_top .about__text {
@@ -1690,6 +1693,7 @@ a {
 .about_container {
   padding: 1rem 3rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+  max-width: 113rem;
 }
 
 .about_textcontainer {
@@ -2145,6 +2149,7 @@ tr:hover {
 
 .admission_title {
   display: none;
+  color: rgb(39, 70, 111);
 }
 
 .admission_section {
@@ -2173,7 +2178,7 @@ input::placeholder {
 .custom-dropdown {
   position: relative;
   display: inline-block;
-  width: 90vw;
+  width: 95%;
   margin-bottom: 2rem;
 }
 
@@ -2221,7 +2226,7 @@ input::placeholder {
   padding: 10px 10px;
   border: 1px solid #ccc;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
-  width: 90vw;
+  width: 95%;
 }
 
 .admission_agreement {
@@ -2463,6 +2468,15 @@ form select {
     padding: 0 15rem;
     font-size: 2.5rem;
   }
+  .admission_basicinput {
+    width: 33.5rem;
+  }
+
+  .admission_email .admission_basicinput,
+  .admission_phone .admission_basicinput {
+    width: 69rem;
+  }
+
   .dropdown-menu {
     top: 3.6rem;
     left: 39.7rem;
