@@ -1568,6 +1568,12 @@ a {
 .banner_staff {
   background-image: url(../images/ourcenter/staffbanner.webp);
 }
+.banner_staff_bot {
+  background-image: url(../images/ourcenter/AdobeStock_592457451.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .banner_menu {
   background-image: url(../images/programs/menu.webp);
@@ -1605,7 +1611,17 @@ a {
 /* About  */
 
 .about_staff {
-  margin-top: 3rem;
+  background-color: var(--color-body-gray);
+}
+
+.staff_container_top {
+  background: #fff;
+  padding: 3rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.staff_container_top .about__text {
+  padding: 0;
 }
 .about_header {
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
@@ -1694,6 +1710,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .about__block.about_staff {
+    margin-top: 0;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
   .about__block {
     margin-top: 6rem;
     padding: 2rem 6rem;
