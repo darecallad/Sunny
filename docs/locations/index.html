@@ -147,23 +147,18 @@
     >
       <div class="container container-center">
         <div class="center-circle">
-          <picture class="block-showcase__image center_picture">
-            <source
-              type="image/webp"
-              srcset="
-                ../images/center/cover-outdoor.webp    1x,
-                ../images/center/cover-outdoor@2x.webp 2x
-              "
-            />
-            <source
-              type="image/png"
-              srcset="
-                ../images/center/cover-outdoor.png    1x,
-                ../images/center/cover-outdoor@2x.png 2x
-              "
-            />
-            <img src="../images/center/cover-outdoor.png" alt="outdoor-cover" />
-          </picture>
+          <div id="map" style="height: 400px; width: 100%"></div>
+          <gmp-map
+            center="37.379112243652344,-121.93821716308594"
+            zoom="14"
+            map-id="DEMO_MAP_ID"
+          >
+            <gmp-advanced-marker
+              position="37.379112243652344,-121.93821716308594"
+              title="My location"
+            >
+            </gmp-advanced-marker>
+          </gmp-map>
         </div>
 
         <div class="feature__content center_info" data-aos="fade-right">
@@ -647,4 +642,14 @@
     AOS.init();
   </script>
   <script src="../js/photoGallery.js"></script>
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc077zGCXxeAMtxA0ok0CiRQGwK7QjECE&callback=initMap"
+  ></script>
+  <script src="../js/map.js"></script>
+  <script
+    async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta"
+  ></script>
 </html>
