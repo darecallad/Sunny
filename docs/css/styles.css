@@ -1761,16 +1761,16 @@ a {
     width: 25rem;
   }
   .about_frame1 {
-    background-image: url(../images/frame/frame1.png);
+    background-image: url(../images/frame/frame1-small.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 52rem 28rem;
+    background-size: cover;
   }
   .about_frame2 {
-    background-image: url(../images/frame/frame2.png);
+    background-image: url(../images/frame/frame2-small.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 52rem 28rem;
+    background-size: cover;
   }
 
   .about_our {
@@ -1780,6 +1780,23 @@ a {
     background-repeat: no-repeat;
     background-size: 40rem 20rem;
     height: 18rem;
+  }
+
+  @media screen and (min-width: 1333px) {
+    .about_frame1 {
+      background-image: url(../images/frame/frame1-med.png);
+    }
+    .about_frame2 {
+      background-image: url(../images/frame/frame2-medl.png);
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    .about_frame1 {
+      background-image: url(../images/frame/frame1-large.png);
+    }
+    .about_frame2 {
+      background-image: url(../images/frame/frame2-large.png);
+    }
   }
 
   .about__firstcontent {
