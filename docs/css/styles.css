@@ -2429,6 +2429,7 @@ input::placeholder {
   text-align: left;
   cursor: pointer;
   color: #aaa;
+  font-size: 1.5rem;
 }
 
 .dropdown-menu {
@@ -2536,6 +2537,13 @@ form select {
   transition: background-color 0.3s;
   margin-right: 1rem;
 }
+
+.admission_basicinput:focus,
+.admission_textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
 .admission_removebtn:hover,
 .admission_btnSymbol:hover {
   background-color: var(--color-headings); /* Navy blue background on hover */
@@ -2638,7 +2646,7 @@ form select {
 
   .dropdown-menu {
     position: absolute;
-    top: 4.5rem;
+    top: 3.8rem;
     left: 32.7rem;
   }
   .admission_child {
@@ -2718,7 +2726,7 @@ form select {
   }
 
   .dropdown-menu {
-    top: 3.6rem;
+    top: 3.5rem;
     left: 39.7rem;
   }
 }

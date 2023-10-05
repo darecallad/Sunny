@@ -164,6 +164,7 @@
                     type="text"
                     id="first_name"
                     placeholder="First Name"
+                    required
                   />
                 </div>
                 <div class="admission_fsecond admission_smalldiv">
@@ -173,6 +174,7 @@
                     type="text"
                     id="last_name"
                     placeholder="Last Name"
+                    required
                   />
                 </div>
               </div>
@@ -183,6 +185,7 @@
                   type="email"
                   id="email"
                   placeholder="someone@company.com"
+                  required
                 />
               </div>
               <div class="admission_smalldiv admission_phone">
@@ -192,6 +195,7 @@
                   type="number"
                   id="phonenumber"
                   placeholder="xxxxxxxxxx"
+                  required
                 />
               </div>
 
@@ -221,6 +225,9 @@
                       <label class="admission_basicinfo">Month</label>
                       <input
                         class="admission_basicinput"
+                        min="1"
+                        max="12"
+                        required
                         type="number"
                         id="child_month"
                         placeholder="MM"
@@ -231,6 +238,9 @@
                       <label class="admission_basicinfo">Day</label>
                       <input
                         class="admission_basicinput"
+                        min="1"
+                        max="31"
+                        required
                         type="number"
                         id="child_day"
                         placeholder="DD"
@@ -239,6 +249,8 @@
                     <div class="admission_smalldiv admission_child">
                       <label class="admission_basicinfo">Year</label>
                       <input
+                        min="2017"
+                        required
                         class="admission_basicinput"
                         type="number"
                         id="child_year"
