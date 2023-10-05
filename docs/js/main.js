@@ -32,16 +32,19 @@ collapsibles.forEach((item) =>
   })
 );
 
-document.querySelector(".read-more").addEventListener("click", function () {
-  const quoteText = document.querySelector(".quote__text");
+const readMoreLinks = document.querySelectorAll(".read-more");
+readMoreLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    const quoteText = this.previousElementSibling; // 這會選擇 ".quote__text" 元素
 
-  if (quoteText.classList.contains("expanded")) {
-    quoteText.classList.remove("expanded");
-    this.textContent = "Read More";
-  } else {
-    quoteText.classList.add("expanded");
-    this.textContent = "Read Less";
-  }
+    if (quoteText.classList.contains("expanded")) {
+      quoteText.classList.remove("expanded");
+      this.textContent = "Read More";
+    } else {
+      quoteText.classList.add("expanded");
+      this.textContent = "Read Less";
+    }
+  });
 });
 function navBehavior() {
   const navClickSpans = document.querySelectorAll(".nav__click .list__flex");
