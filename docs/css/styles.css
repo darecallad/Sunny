@@ -1694,8 +1694,9 @@ a {
 }
 .banner_section.banner_progessbot {
   background-image: url(../images/admission/AdobeStock_115717709.jpeg);
-  background-size: contain;
+  background-size: cover;
   background-position: 50% 50%;
+  padding-bottom: 0;
 }
 
 .banner_section.banner_infant {
