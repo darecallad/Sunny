@@ -35,13 +35,7 @@ function openModalWithPhoto(src) {
 function closePhotoModal() {
   document.getElementById("photo-modal").style.display = "none";
 }
-
-window.onclick = function (event) {
-  var modal = document.getElementById("photo-modal");
-  if (event.target === modal) {
-    closePhotoModal();
-  }
-};
+document.querySelector(".close-button").onclick = closePhotoModal;
 
 function showPreviousPhotos() {
   if (currentPhotoIndex > 0) {
