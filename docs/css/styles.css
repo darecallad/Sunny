@@ -1149,8 +1149,20 @@ a {
   width: 30rem;
   min-height: 40rem;
   display: none;
+  border: 2.5rem solid #f8d648;
+  border-radius: 0;
+}
+
+.inner-container {
+  width: calc(100% + 2rem);
+  height: calc(100% + 2rem);
+  background-color: #fff;
+  border-radius: 10px;
   padding: 1rem;
-  border: 2rem solid #f8d648;
+  left: 0.3rem;
+  position: relative;
+  z-index: 1;
+  margin: -1.3rem;
 }
 
 .testimonial.active {
@@ -1201,7 +1213,7 @@ a {
 
 .icon-test {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   right: 30%;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 48% 75%, 0% 100%);
   width: 8rem;
@@ -1282,6 +1294,10 @@ a {
   max-height: 10rem;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
+}
+
+.quote_container {
+  min-height: 40rem;
 }
 
 .quote__text.expanded {
