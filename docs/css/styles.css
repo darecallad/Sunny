@@ -2428,6 +2428,7 @@ input::placeholder {
   background-color: #fff;
   text-align: left;
   cursor: pointer;
+  color: #aaa;
 }
 
 .dropdown-menu {
