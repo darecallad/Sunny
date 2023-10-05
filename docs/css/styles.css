@@ -1251,6 +1251,9 @@ a {
   .testimonial .quote__author {
     font-size: 2.4rem;
   }
+  .testimonial .quote__text {
+    padding-top: 5.5rem;
+  }
 
   .testimonial-nav-left,
   .testimonial-nav-right {
@@ -1364,6 +1367,7 @@ a {
   }
   .quote__text {
     font-size: 2rem;
+    max-height: 30rem;
   }
 
   .read-more {
