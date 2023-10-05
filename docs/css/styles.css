@@ -629,6 +629,9 @@ a {
 }
 .download-container {
   margin: 4rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container .hero__tagline {
@@ -828,6 +831,17 @@ a {
 .btn--secondary {
   background: var(--color-secondary);
   color: #fff;
+}
+
+.btn--download {
+  background-color: #ab3e0b;
+  color: #fff;
+}
+
+.btn--download:hover {
+  background-color: #fff;
+  color: #ab3e0b;
+  border: 1px solid #ab3e0b;
 }
 
 .btn--secondary:hover {
@@ -1595,6 +1609,11 @@ a {
   background-image: url(../images/admission/pexels-yan-krukau-8612925.jpg);
   background-position: 50% 70%;
 }
+.banner_menubot {
+  background-image: url(../images/programs/AdobeStock_449176606.jpeg);
+  background-position: center center;
+  background-size: contain;
+}
 
 .banner_staff {
   background-image: url(../images/ourcenter/staffbanner.webp);
@@ -1992,7 +2011,7 @@ tr:hover {
   border: 1px solid #7392ec;
   border-radius: 30px;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #7392ec;
   color: #fff;
   display: inline-block;
