@@ -152,6 +152,11 @@ a {
   height: 40px;
 }
 
+.icon--small {
+  width: 20px;
+  height: 20px;
+}
+
 .icon--white {
   fill: #fff;
 }
@@ -476,7 +481,7 @@ a {
 
 #map {
   min-width: 25rem;
-  min-height: 50rem;
+  min-height: 25rem;
 }
 
 .block-center {
@@ -672,7 +677,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .center_info {
-    margin-left: 15rem;
+    margin-left: 5rem;
   }
 
   .container.feature {
@@ -1100,6 +1105,10 @@ a {
 
 .plan .list__item {
   margin-bottom: 2rem;
+}
+
+.list__item .daycare__point {
+  margin-bottom: 0;
 }
 
 /* testimonial */
@@ -1647,6 +1656,14 @@ a {
 .daycare__text {
   font-size: 1.8rem;
   color: var(--color-headings);
+}
+
+.daycare__text.daycare_firstnumber {
+  margin-bottom: 0;
+}
+
+p.daycare__text {
+  text-indent: 2rem;
 }
 
 .about__text {
