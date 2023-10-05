@@ -1,7 +1,7 @@
+closePhotoModal();
 var currentPhotoIndex = 0;
 var totalPhotos;
 var photoThumbnails = document.querySelectorAll(".photo-thumbnail");
-
 function setTotalPhotosBasedOnViewport() {
   var width = window.innerWidth;
 
