@@ -1962,6 +1962,8 @@ tr:hover {
   padding: 1rem;
   background-color: #7392ec;
   color: #fff;
+  display: inline-block;
+  margin-top: 2rem;
 }
 
 .resources_brightwheel:hover {
