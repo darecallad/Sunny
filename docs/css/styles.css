@@ -701,10 +701,19 @@ a {
   display: grid;
 }
 
+@media screen and (min-width: 768px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .grid--1x2 {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+@media screen and (min-width: 1550px) {
   .grid--1x5 {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
@@ -953,6 +962,7 @@ a {
   border-top: none;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  height: 28rem;
 }
 
 .card__body p {
@@ -1088,6 +1098,13 @@ a {
 
   .block-plans .grid {
     gap: 8rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-plans {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 
@@ -1553,7 +1570,6 @@ a {
 
   .block.container {
     margin-left: 0;
-    padding-left: 0;
     margin-right: 0;
   }
 
