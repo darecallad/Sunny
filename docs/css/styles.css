@@ -1574,6 +1574,12 @@ a {
 .banner_staff {
   background-image: url(../images/ourcenter/staffbanner.webp);
 }
+
+.banner_resources {
+  background-image: url(../images/resources/pexels-mikhail-nilov-8923956.jpg);
+  background-position: 50% 50%;
+}
+
 .banner_staff_bot {
   background-image: url(../images/ourcenter/AdobeStock_592457451.jpeg);
   background-position: 50% 50%;
@@ -1915,6 +1921,121 @@ tr:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.resources_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.resources_text {
+  color: var(--color-headings);
+}
+
+.resources_subdiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.resources_block {
+  max-width: 105rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.resources_img {
+  width: 400px;
+}
+
+.text_center {
+  text-align: center;
+}
+
+.resources_brightwheel {
+  border: 1px solid #7392ec;
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 1rem;
+  background-color: #7392ec;
+  color: #fff;
+}
+
+.resources_brightwheel:hover {
+  border: 1px solid #7392ec;
+  background-color: #fff;
+  color: #7392ec;
+}
+
+.calendar_button {
+  border: 1px solid #fd1916;
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: rgb(253, 25, 22, 0.9);
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.calendar_button:hover {
+  border: 1px solid #fd1916;
+  background-color: #fff;
+  color: rgb(253, 25, 22, 0.9);
+}
+
+.parent_button {
+  border: 1px solid #f1931f;
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: #f1931f;
+  color: #fff;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.parent_button:hover {
+  border: 1px solid #f1931f;
+  background-color: #fff;
+  color: #f1931f;
+}
+
+.employee_button {
+  border: 1px solid #64be64;
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 1.5rem;
+  background-color: #64be64;
+  color: #fff;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.employee_button:hover {
+  border: 1px solid #64be64;
+  background-color: #fff;
+  color: #64be64;
+}
+
+@media screen and (min-width: 768px) {
+  .resources_div {
+    flex-direction: row;
+  }
+
+  p.resources_text {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  p.resources_text {
+    font-size: 3rem;
+  }
 }
 
 /* Form */
