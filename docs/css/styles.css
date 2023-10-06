@@ -1686,10 +1686,15 @@ a {
   background-image: url(../images/admission/pexels-yan-krukau-8612925.jpg);
   background-position: 50% 70%;
 }
-.banner_menubot {
-  background-image: url(../images/programs/AdobeStock_449176606.jpeg);
+.banner_section.banner_menubot {
+  background-image: url(../images/programs/photo.jpeg);
   background-position: center center;
-  background-size: contain;
+  background-size: 100% 100%;
+}
+@media screen and (min-width: 768px) {
+  .banner_section.banner_menubot {
+    background-image: url(../images/programs/AdobeStock_449176606.jpeg);
+  }
 }
 
 .banner_staff {
@@ -1724,7 +1729,7 @@ a {
   background-image: url(../images/admission/AdobeStock_116931226.jpeg);
 }
 .banner_section.banner_progessbot {
-  background-image: url(../images/admission/AdobeStock_115717709.jpeg);
+  background-image: url(../images/admission/hand.webp);
   background-size: cover;
   background-position: 50% 50%;
   padding-bottom: 0;
@@ -2505,13 +2510,13 @@ input::placeholder {
 }
 
 .admission_textarea {
-  min-width: 41rem;
+  min-width: 30rem;
   height: 7.5rem;
   border-radius: 5px;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
   padding: 1.5rem 1.5rem;
   font-size: 2rem;
-  max-width: max-content;
+  max-width: 34rem;
 }
 
 .admission_btn {
