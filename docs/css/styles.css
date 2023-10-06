@@ -185,7 +185,7 @@ a {
   width: 25px;
   height: 25px;
 }
-/* Navigation Bar */
+/* Discount Bar */
 
 .discount {
   position: fixed;
@@ -218,6 +218,61 @@ a {
   text-decoration: underline;
   text-decoration-color: #fff;
 }
+
+.discount__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount_container {
+  padding-top: 4.8rem;
+  padding-bottom: 4.8rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.discount__block__heading {
+  font-size: 3rem;
+}
+.discount__block__text {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  line-height: 2;
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 1024px) {
+  .discount__block {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  h2.discount__block__heading {
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .discount_container__outter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .discount_container__inner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 120rem;
+  }
+}
+/* Navigation Bar */
 .nav {
   position: fixed;
   top: 4rem;
@@ -1726,9 +1781,22 @@ a {
   background-position: center center;
   background-size: 100% 100%;
 }
+
 @media screen and (min-width: 768px) {
   .banner_section.banner_menubot {
     background-image: url(../images/programs/AdobeStock_449176606.jpeg);
+  }
+}
+
+.banner_section.banner_discount {
+  background-image: url(../images/discount/Flower.webp);
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-bottom: 0;
+}
+@media screen and (min-width: 1024px) {
+  .banner_section.banner_discount {
+    background-size: contain;
   }
 }
 
