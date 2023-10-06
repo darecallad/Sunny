@@ -2162,6 +2162,10 @@ tr:hover {
   color: #64be64;
 }
 
+p.resources_text {
+  font-weight: bold;
+}
+
 @media screen and (min-width: 768px) {
   .resources_div {
     flex-direction: row;
@@ -2169,7 +2173,6 @@ tr:hover {
 
   p.resources_text {
     font-size: 2rem;
-    font-weight: bold;
   }
 }
 
