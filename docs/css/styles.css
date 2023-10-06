@@ -1632,8 +1632,8 @@ h2.discount__block__heading {
 .spider_img {
   position: absolute;
   width: 20rem;
-  top: -5rem;
-  left: -1rem;
+  top: -4rem;
+  left: 2rem;
 }
 
 .feature__content .list__item {
@@ -1685,21 +1685,41 @@ h2.discount__block__heading {
     height: 30rem;
   }
 
+  p.feature__context {
+    position: relative;
+    left: 19rem;
+    top: -9rem;
+  }
+
+  p.feature__context1 {
+    position: relative;
+    left: 19rem;
+    top: 0rem;
+  }
+
   .feature__image {
     width: 50rem;
+    padding-top: 15rem;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .spider_img {
+    width: 25rem;
+    top: -3rem;
+    left: 0rem;
+  }
+}
 @media screen and (min-width: 1080px) {
   .spider_img {
     width: 25rem;
-    top: -4rem;
+    top: 0rem;
     left: -2rem;
   }
 }
 @media screen and (min-width: 1180px) {
   .spider_img {
-    top: -2rem;
+    left: 2rem;
   }
 }
 
