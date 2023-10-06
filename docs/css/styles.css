@@ -1265,10 +1265,12 @@ a {
   .testimonial {
     width: 80rem;
   }
-  .read-more {
-    display: none;
-  }
 
+  .quote_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .icon-test {
     top: 29.5%;
     right: 30%;
@@ -1295,7 +1297,6 @@ a {
 
 .quote__text {
   font-size: 1.5rem;
-  max-height: 10rem;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
@@ -1997,8 +1998,8 @@ p.daycare__text {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 table {
