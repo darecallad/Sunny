@@ -330,8 +330,8 @@ h2.discount__block__heading {
   transition: box-shoadow 0.15s;
   cursor: pointer;
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 4.5rem;
+  right: 2rem;
 }
 
 .nav.collapsible--expanded .nav__toggler {
@@ -808,6 +808,7 @@ h2.discount__block__heading {
 @media screen and (min-width: 768px) {
   .grid--1x3 {
     grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
   }
 }
 
