@@ -1149,7 +1149,7 @@ a {
   width: 30rem;
   min-height: 40rem;
   display: none;
-  border: 2.5rem solid #f8d648;
+  border: 5rem solid #f8d648;
   border-radius: 0;
 }
 
@@ -1222,6 +1222,7 @@ a {
   justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  top: 12rem;
 }
 
 .icon-test svg {
@@ -1231,18 +1232,25 @@ a {
 
 .testimonial .quote__text {
   padding-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .testimonial {
-    width: 45rem;
-    border: 5rem solid #f8d648;
+    width: 80rem;
+    border: 8rem solid #f8d648;
   }
 
   .icon-test {
     top: 29.6%;
-    right: 35%;
+    right: 30%;
+  }
+  .quote_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .testimonial .quote__text {
     padding-top: 3rem;
@@ -1266,11 +1274,6 @@ a {
     width: 80rem;
   }
 
-  .quote_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .icon-test {
     top: 29.5%;
     right: 30%;
@@ -1279,7 +1282,7 @@ a {
 
 @media screen and (min-width: 1700px) {
   .icon-test {
-    right: 35%;
+    right: 38%;
   }
 }
 
