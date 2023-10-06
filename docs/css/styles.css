@@ -187,9 +187,40 @@ a {
 }
 /* Navigation Bar */
 
+.discount {
+  position: fixed;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  background: #2a465e;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: left;
+  overflow: visible;
+}
+
+.discount__text {
+  padding-left: 2rem;
+}
+
+.discount__link {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.discount__link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
 .nav {
   position: fixed;
-  top: 0;
+  top: 4rem;
   left: 0;
   width: 100%;
   z-index: 4;
