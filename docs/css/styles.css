@@ -484,6 +484,12 @@ h2.discount__block__heading {
   padding: var(--padding-vertical) 2rem;
 }
 
+.block__header .halloween {
+  margin: 0;
+  display: inline-block;
+  padding-top: 5rem;
+  font-size: 2rem;
+}
 .block--orange {
   background-color: #ffbb5c;
   max-height: 0.5rem;
@@ -695,6 +701,10 @@ h2.discount__block__heading {
     color: #393e46;
     background-color: rgba(255, 255, 255, 0.7);
   }
+
+  .block__header .halloween {
+    font-size: 3rem;
+  }
 }
 
 .block.hero {
@@ -715,6 +725,10 @@ h2.discount__block__heading {
   .blokc-upcoming,
   .block-why {
     max-width: 100%;
+  }
+
+  .block__header .halloween {
+    font-size: 4rem;
   }
 }
 
@@ -1599,7 +1613,7 @@ h2.discount__block__heading {
 /* Features */
 .feature {
   gap: 2rem 2rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
 }
 
 .feature__container {
@@ -1608,9 +1622,6 @@ h2.discount__block__heading {
   margin-right: auto;
 }
 
-.feature:first-of-type {
-  margin-top: 3rem;
-}
 .feature__heading {
   margin: 1rem 0;
   display: flex;
@@ -1640,8 +1651,30 @@ h2.discount__block__heading {
   text-align: left;
 }
 .feature__content p {
-  padding: 5rem 0 0 5rem;
+  padding: 2rem 0 0 5rem;
   font-size: 1.8rem;
+}
+
+.feature__content a {
+  font-size: 1.8rem;
+  border: 1px solid #4f863d;
+
+  padding: 0.6rem;
+  background-color: #4f863d;
+  color: #fff;
+  display: inline-block;
+}
+
+.feature__content a:hover {
+  border: 1px solid #4f863d;
+  background-color: #fff;
+  color: #4f863d;
+}
+
+.feature__linkdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .feature__content .feature__heading {
@@ -1685,21 +1718,8 @@ h2.discount__block__heading {
     height: 30rem;
   }
 
-  p.feature__context {
-    position: relative;
-    left: 19rem;
-    top: -9rem;
-  }
-
-  p.feature__context1 {
-    position: relative;
-    left: 19rem;
-    top: 0rem;
-  }
-
   .feature__image {
     width: 50rem;
-    padding-top: 15rem;
   }
 }
 
