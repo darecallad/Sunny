@@ -35,7 +35,7 @@ collapsibles.forEach((item) =>
 const readMoreLinks = document.querySelectorAll(".read-more");
 readMoreLinks.forEach((link) => {
   link.addEventListener("click", function () {
-    const quoteText = this.previousElementSibling; // 這會選擇 ".quote__text" 元素
+    const quoteText = this.previousElementSibling;
 
     if (quoteText.classList.contains("expanded")) {
       quoteText.classList.remove("expanded");
@@ -46,21 +46,26 @@ readMoreLinks.forEach((link) => {
     }
   });
 });
+
+function closeSubnav(subnav) {
+  subnav.style.visibility = "hidden";
+  subnav.style.opacity = "0";
+  subnav.style.maxHeight = "0";
+  subnav.style.transform = "translateY(-100%)";
+  subnav
+    .closest(".nav__click")
+    .querySelector(".list__flex")
+    .classList.remove("active");
+}
+
 function navBehavior() {
   const navClickSpans = document.querySelectorAll(".nav__click .list__flex");
-
-  // close all subnav
+  let closeTimeout;
+  // Close all subnavs
   function closeAllSubnavs() {
     const allSubnavs = document.querySelectorAll(".subnav__content");
     allSubnavs.forEach((subnav) => {
-      subnav.style.visibility = "hidden";
-      subnav.style.opacity = "0";
-      subnav.style.maxHeight = "0";
-      subnav.style.transform = "translateY(-100%)";
-      subnav
-        .closest(".nav__click")
-        .querySelector(".list__flex")
-        .classList.remove("active");
+      closeSubnav(subnav);
     });
   }
 
@@ -85,44 +90,33 @@ function navBehavior() {
         subnav.style.transform = "translateY(0)";
         div.classList.add("active");
       } else {
-        subnav.style.visibility = "hidden";
-        subnav.style.opacity = "0";
-        subnav.style.maxHeight = "0";
-        subnav.style.transform = "translateY(-100%)";
-        div.classList.remove("active");
+        closeSubnav(subnav);
       }
 
       e.stopPropagation();
     })
   );
+
+  if (window.innerWidth > 768) {
+    const subnavContents = document.querySelectorAll(".subnav__content");
+    subnavContents.forEach((subnav) => {
+      subnav.closest(".nav__click").addEventListener("mouseleave", function () {
+        closeTimeout = setTimeout(() => {
+          closeSubnav(subnav);
+        }, 300);
+      });
+      subnav.closest(".nav__click").addEventListener("mouseenter", function () {
+        clearTimeout(closeTimeout);
+      });
+    });
+  }
 }
 
 document.addEventListener("click", function (e) {
   const subnavs = document.querySelectorAll(".subnav__content");
   subnavs.forEach((subnav) => {
     if (!e.target.closest(".nav__click")) {
-      subnav.style.visibility = "hidden";
-      subnav.style.opacity = "0";
-      subnav.style.maxHeight = "0";
-      subnav.style.transform = "translateY(-100%)";
-
-      // 移除 active class
-      subnav
-        .closest(".nav__click")
-        .querySelector(".list__flex")
-        .classList.remove("active");
-    }
-  });
-});
-
-document.addEventListener("click", function (e) {
-  const subnavs = document.querySelectorAll(".subnav__content");
-  subnavs.forEach((subnav) => {
-    if (!e.target.closest(".nav__click")) {
-      subnav.style.visibility = "hidden";
-      subnav.style.opacity = "0";
-      subnav.style.maxHeight = "0";
-      subnav.style.transform = "translateY(-100%)";
+      closeSubnav(subnav);
     }
   });
 });
