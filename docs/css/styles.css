@@ -344,6 +344,12 @@ h2.discount__block__heading {
   transform: translateY(5px);
 }
 
+@media screen and (max-width: 395px) {
+  .nav__toggler {
+    right: 0.5rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .nav > a > img {
     width: 350px;
@@ -1723,6 +1729,12 @@ h2.discount__block__heading {
   }
 }
 
+@media screen and (max-width: 395px) {
+  .spider_img {
+    left: -3rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .spider_img {
     width: 25rem;
@@ -1794,6 +1806,11 @@ h2.discount__block__heading {
   text-align: center;
 }
 
+@media screen and (max-width: 395px) {
+  .callout-flex .btn {
+    font-size: 1rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
