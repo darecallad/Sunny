@@ -44,7 +44,7 @@ app.post("/send-email", (req, res) => {
 
   let mailOptions = {
     from: process.env.EMAIL_USER,
-    to: "darecallad00@gmail.com",
+    to: "Center.admin@sunnychildcare.com",
     subject: `Message from ${req.body.name}`,
     text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phoneNumber}\n${childrenText}Method: ${req.body.contactMethod}\nStart Date: ${req.body.startDate}\nMessage: ${req.body.message}`,
   };
