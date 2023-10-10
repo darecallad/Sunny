@@ -1921,8 +1921,9 @@ h2.discount__block__heading {
 .banner_preschool {
   background-image: url(../images/programs/preschool.webp);
 }
-.banner_king {
+.banner_section.banner_king {
   background-image: url(../images/programs/king.webp);
+  background-position: 0%50%;
 }
 .banner_center {
   background-image: url(../images/center/center.webp);
@@ -2134,30 +2135,34 @@ p.daycare__text {
     background-size: 40rem 20rem;
     height: 18rem;
   }
+  .about__image {
+    width: 30rem;
+  }
+}
+@media screen and (min-width: 1333px) {
+  .about_frame1 {
+    background-image: url(../images/frame/frame1-med.png);
+    background-size: 100%100%;
+  }
+  .about_frame2 {
+    background-image: url(../images/frame/frame2-medl.png);
+    background-size: 100%100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .about_frame1 {
+    background-image: url(../images/frame/frame1-large.png);
+  }
+  .about_frame2 {
+    background-image: url(../images/frame/frame2-large.png);
+  }
+}
 
-  @media screen and (min-width: 1333px) {
-    .about_frame1 {
-      background-image: url(../images/frame/frame1-med.png);
-    }
-    .about_frame2 {
-      background-image: url(../images/frame/frame2-medl.png);
-    }
-  }
-  @media screen and (min-width: 1600px) {
-    .about_frame1 {
-      background-image: url(../images/frame/frame1-large.png);
-    }
-    .about_frame2 {
-      background-image: url(../images/frame/frame2-large.png);
-    }
-  }
-
-  .about__firstcontent {
-    padding-top: 4rem;
-  }
-  .about__lastcontent {
-    padding-bottom: 4rem;
-  }
+.about__firstcontent {
+  padding-top: 4rem;
+}
+.about__lastcontent {
+  padding-bottom: 4rem;
 }
 
 /* Program section */
