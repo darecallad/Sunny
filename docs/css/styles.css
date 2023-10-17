@@ -1172,6 +1172,19 @@ h2.discount__block__heading {
     display: inline-block;
   }
 
+  .staff_des {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .des_bot {
+    color: rgb(0, 0, 0, 0.4);
+  }
+
+  .des_top {
+    height: 16.7rem;
+  }
+
   .staff_text_wrap {
     display: flex;
     flex-direction: column;
