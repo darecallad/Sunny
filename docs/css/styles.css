@@ -1087,6 +1087,7 @@ h2.discount__block__heading {
 .staff_image {
   width: 6.5rem;
   height: 5.7rem;
+  object-fit: cover;
 }
 
 .card_staff_header {
