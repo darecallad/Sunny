@@ -2990,3 +2990,52 @@ form select {
     left: 39.7rem;
   }
 }
+
+.class_gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.gallery_container {
+  position: relative;
+}
+
+.gallery_photo {
+  width: 80%;
+  object-fit: cover;
+}
+
+.gallery_arrow_left,
+.gallery_arrow_right {
+  position: absolute;
+  color: rgb(39, 70, 111);
+  font-size: 5rem;
+  top: 35%;
+  z-index: 1;
+}
+
+.gallery_arrow_right {
+  right: 0;
+  padding-right: 2rem;
+}
+
+.gallery_arrow_left {
+  left: 0;
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery_arrow_left,
+  .gallery_arrow_right {
+    font-size: 8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .gallery_arrow_left,
+  .gallery_arrow_right {
+    font-size: 11rem;
+  }
+}
