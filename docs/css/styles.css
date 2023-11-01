@@ -1890,6 +1890,12 @@ h2.discount__block__heading {
 .banner_about {
   background-image: url(../images/ourcenter/V.webp);
 }
+.banner_section.banner_event {
+  background-image: url(../images/event/banner.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .banner_tuition {
   background-image: url(../images/admission/pexels-yan-krukau-8612925.jpg);
   background-position: 50% 70%;
@@ -1903,6 +1909,10 @@ h2.discount__block__heading {
 @media screen and (min-width: 768px) {
   .banner_section.banner_menubot {
     background-image: url(../images/programs/AdobeStock_449176606.jpeg);
+  }
+  .banner_section.banner_event {
+    background-image: url(../images/event/banner.jpg);
+    background-position: 20% 50%;
   }
 }
 
@@ -3005,7 +3015,9 @@ form select {
 
 .gallery_photo {
   width: 80%;
-  object-fit: cover;
+  object-fit: contain;
+  max-height: 70rem;
+  vertical-align: middle;
 }
 
 .gallery_arrow_left,
