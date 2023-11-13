@@ -1090,6 +1090,10 @@ h2.discount__block__heading {
   object-fit: cover;
 }
 
+.staff_image.cc {
+  object-position: center top;
+}
+
 .card_staff_header {
   display: flex;
   text-align: center;
