@@ -1,4 +1,9 @@
 # Sunny Child Care
+![image](https://github.com/darecallad/Sunny/assets/27443134/b8e39f78-8bcb-49f0-bdb5-62aea5f869f2)
+
+![image](https://github.com/darecallad/Sunny/assets/27443134/16df616f-14db-484c-8ac3-7cb63ddb70a2)
+
+![image](https://github.com/darecallad/Sunny/assets/27443134/91ffe2b8-78cb-4207-8bb4-c1b3b335747b)
 
 Welcome to the Sunny Child Care repository. Our application is a comprehensive platform designed to provide families in the Santa Clara area with nurturing and enriching childcare services. With a focus on creating a home-like environment, we facilitate the intellectual, emotional, physical, and spiritual growth of children through our Mandarin-English immersion program.
 
