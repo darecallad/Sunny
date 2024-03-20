@@ -86,7 +86,7 @@ function navBehavior() {
       ) {
         subnav.style.visibility = "visible";
         subnav.style.opacity = "1";
-        subnav.style.maxHeight = "25rem";
+        subnav.style.maxHeight = "35rem";
         subnav.style.transform = "translateY(0)";
         div.classList.add("active");
       } else {
