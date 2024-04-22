@@ -30,5 +30,4 @@ function initGallery(galleryID) {
 
 document.addEventListener("DOMContentLoaded", function () {
   initGallery("gallery1");
-  initGallery("gallery2");
 });
