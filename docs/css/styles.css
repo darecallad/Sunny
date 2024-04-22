@@ -1675,26 +1675,6 @@ h2.discount__block__heading {
 .feature__content .list__item {
   text-align: left;
 }
-.feature__content p {
-  padding: 2rem 0 0 5rem;
-  font-size: 1.8rem;
-}
-
-.feature__content a {
-  font-size: 1.8rem;
-  border: 1px solid #4f863d;
-
-  padding: 0.6rem;
-  background-color: #4f863d;
-  color: #fff;
-  display: inline-block;
-}
-
-.feature__content a:hover {
-  border: 1px solid #4f863d;
-  background-color: #fff;
-  color: #4f863d;
-}
 
 .feature__linkdiv {
   display: flex;
@@ -1707,29 +1687,21 @@ h2.discount__block__heading {
 }
 
 .feature__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
 }
-@media screen and (min-width: 768px) {
-  .feature__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 
+@media screen and (min-width: 768px) {
   .feature__content .list {
     margin-bottom: 0;
   }
-  .feature__content {
-    flex: 1;
-  }
   .feature__image {
     width: 25rem;
-  }
-  .feature {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
   }
 }
 
@@ -1737,14 +1709,6 @@ h2.discount__block__heading {
   .feature {
     gap: 2rem 5rem;
     margin-bottom: 8rem;
-  }
-
-  .feature__content {
-    height: 30rem;
-  }
-
-  .feature__image {
-    width: 40rem;
   }
 }
 
@@ -3055,4 +3019,75 @@ form select {
   .gallery_arrow_right {
     font-size: 11rem;
   }
+}
+
+/* Summer sections */
+
+.nav.collapsible.summer_nav {
+  top: 3rem;
+}
+.summer_header {
+  position: fixed;
+  height: 3rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  background: #2a465e;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.summer_headertext {
+  color: white;
+  font-weight: bold;
+}
+
+.summer_showcase {
+  height: 5rem;
+  background: #2a465e;
+}
+
+.test {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #007bff;
+  border-radius: 50%;
+  height: 60rem;
+  width: 60rem;
+}
+
+@media screen and (min-width: 768px) {
+  .test {
+    top: -7rem;
+  }
+}
+
+.feature__context.summer_signup {
+  padding-left: 0;
+}
+
+.summer_earlybird {
+  position: relative;
+  top: 4rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* iframe */
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
