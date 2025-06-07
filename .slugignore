@@ -1,0 +1,14 @@
+# .slugignore
+
+# 整個 docs 資料夾（前端靜態檔）
+docs/
+
+# 如果你的靜態資源還在其它資料夾
+css/
+js/
+images/
+
+# 不必打包的文件
+README.md
+.gitignore
+CNAME

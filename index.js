@@ -34,7 +34,7 @@ app.post("/send-email", (req, res) => {
     },
   });
   let childrenDates = req.body.childrenDates;
-  const chineseTour   = req.body.chineseTour; 
+  let chineseTour   = req.body.chineseTour; 
 
   let childrenText = "";
   childrenDates.forEach((childDate, index) => {
