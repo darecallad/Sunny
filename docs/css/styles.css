@@ -2637,10 +2637,18 @@ p.resources_text {
   font-size: 1.5rem;
 }
 
+.admission_tourcontainer{
+  display: flex;
+}
+
 .admission_basicinfo::after {
   content: "*";
   color: red;
   margin-left: 5px;
+}
+
+.tour-options{
+  margin-right:2rem;
 }
 
 .admission_footer {

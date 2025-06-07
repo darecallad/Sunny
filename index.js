@@ -34,6 +34,7 @@ app.post("/send-email", (req, res) => {
     },
   });
   let childrenDates = req.body.childrenDates;
+  const chineseTour   = req.body.chineseTour; 
 
   let childrenText = "";
   childrenDates.forEach((childDate, index) => {
@@ -46,7 +47,7 @@ app.post("/send-email", (req, res) => {
     from: process.env.EMAIL_USER,
     to: "Center.admin@sunnychildcare.com",
     subject: `Message from ${req.body.name}`,
-    text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phoneNumber}\n${childrenText}Method: ${req.body.contactMethod}\nStart Date: ${req.body.startDate}\nMessage: ${req.body.message}`,
+    text: `Name: ${req.body.name}\nEmail: ${req.body.email}\nPhone: ${req.body.phoneNumber}\n${childrenText}Method: ${req.body.contactMethod}\nStart Date: ${req.body.startDate}\nChinese Tour: ${chineseTour}\nMessage: ${req.body.message}`,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {

@@ -39,6 +39,10 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
     .querySelectorAll(".dropdown-toggle")[1]
     .textContent.trim();
 
+  const chineseTour = document.querySelector(
+    'input[name="chineseTour"]:checked'
+  )?.value;
+
   // Data validation
   if (
     !firstName ||
@@ -46,7 +50,7 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
     !email ||
     !phoneNumber ||
     contactMethod === "contact me by..." ||
-    startDate === "We'd like to start in..."
+    startDate === "We'd like to start in..."  || !chineseTour
   ) {
     alert("Please fill out all the required fields!");
     return;
@@ -63,6 +67,7 @@ document.getElementById("emailForm").addEventListener("submit", function (e) {
       phoneNumber: phoneNumber,
       contactMethod: contactMethod,
       startDate: startDate,
+      chineseTour: chineseTour,
       message: message,
       childrenDates: childrenDates,
     }),
